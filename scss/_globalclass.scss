@@ -1,3 +1,17 @@
+body{
+    font-family: $font1;
+}
+
+img{
+    width: 100%;
+}
+
+.home{
+    background: url(../image/bg1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
 .container{
     max-width: 80%;
     margin: 0 auto;

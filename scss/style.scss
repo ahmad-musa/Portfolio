@@ -3,6 +3,111 @@
 @import 'header';
 
 
+// Hero Section Starts
+
+.hero {
+
+    .container_box {
+        position: relative;
+
+        .container_1 {
+
+            .img_bg {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+
+            }
+        }
+
+
+        .container_2 {
+            position: absolute;
+            top: 0px;
+
+            .img_man {
+                border-radius: 50%;
+                height: 400px;
+                width: 400px;
+            }
+        }
+
+        .container_3 {
+            height: 335px;
+            width: 335px;
+            background: lighten($color1, 15%);
+            opacity: .35;
+            position: absolute;
+            top: 50px;
+            left: 5px;
+            transform: rotate(60deg);
+        }
+
+        .container_4 {
+
+            height: 295px;
+            width: 350px;
+            border: 5px solid (darken($color1, 3%));
+            position: absolute;
+            top: 40px;
+
+            .mini_box {
+                position: relative;
+                height: 295px;
+
+                .box_1 {
+                    position: absolute;
+                    top: 10px;
+                    right: -70px;
+                    width: 100px;
+                    height: 100px;
+                    background: $white;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+                }
+
+                .box_2 {
+                    position: absolute;
+                    bottom: -35px;
+                    left: -35px;
+                    width: 150px;
+                    height: 150px;
+                    background: $white;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+                }
+
+                .box_3 {
+                    position: absolute;
+                    bottom: -45px;
+                    right: -35px;
+                    width: 80px;
+                    height: 80px;
+                    background: $white;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+
+// Hero Section Ends
+
+
+
+
 // Main Section Starts
 
 .main {
