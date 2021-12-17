@@ -1,0 +1,55 @@
+/* Side Navbar Starts (Better Nav) */
+
+.navbar-toggler-icon{
+    i{
+        color: $color2;
+    }
+}
+
+
+body.side-menu-visible #side-menu {
+
+    transform: translateX(-275px);
+    padding: 20px 15px;
+
+    .close {
+        background: $white;
+        border: 2px solid $color1;
+        /* padding: 1px 8px; */
+        border-radius: 5px;
+
+        &:hover {
+            border: 2px solid $color1;
+        }
+
+        span {
+            color: $color1;
+            padding: 1px 8px;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+
+    .nav-link {
+        color: $color2;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        &:hover {
+            color: $color1;
+            font-size: 30px;
+            font-weight: 800;
+            padding: 10px 6px;
+            margin-left: 6px;
+        }
+    }
+
+}
+
+
+/* Side Navbar Ends */

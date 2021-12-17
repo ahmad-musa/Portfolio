@@ -23,8 +23,6 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  /* Side Navbar Starts (Better Nav) */
-  /* Side Navbar Ends */
 }
 
 .header .nav_container a img {
@@ -59,51 +57,9 @@
 }
 
 .header .nav_container #Nav .nav-link.download:hover {
-  border: 2px solid #000;
-  background: #000;
-  color: #ef5c6e;
-}
-
-.header .nav_container #side-menu {
-  transform: translateX(-230px);
-  padding: 20px 15px;
-}
-
-.header .nav_container #side-menu .close {
-  background: #fff;
-  border: 2px solid #6e50f0;
-  /* padding: 1px 8px; */
-  border-radius: 5px;
-}
-
-.header .nav_container #side-menu .close:hover {
   border: 2px solid #ef5c6e;
-}
-
-.header .nav_container #side-menu .close span {
-  color: #6e50f0;
-  padding: 1px 8px;
-}
-
-.header .nav_container #side-menu .close span:hover {
-  color: #ef5c6e;
-}
-
-.header .nav_container #side-menu .nav-link {
-  color: red;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 16px 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.header .nav_container #side-menu .nav-link:hover {
-  color: #6e50f0;
-  font-size: 30px;
-  font-weight: 800;
-  padding: 8px 6px;
-  margin-left: 6px;
+  background: #ef5c6e;
+  color: #fff;
 }
 
 /* Header Section Ends */
@@ -114,3 +70,52 @@
 .footer .credit {
   text-align: center;
 }
+
+/* Side Navbar Starts (Better Nav) */
+.navbar-toggler-icon i {
+  color: #6e50f0;
+}
+
+body.side-menu-visible #side-menu {
+  transform: translateX(-275px);
+  padding: 20px 15px;
+}
+
+body.side-menu-visible #side-menu .close {
+  background: #fff;
+  border: 2px solid #ef5c6e;
+  /* padding: 1px 8px; */
+  border-radius: 5px;
+}
+
+body.side-menu-visible #side-menu .close:hover {
+  border: 2px solid #ef5c6e;
+}
+
+body.side-menu-visible #side-menu .close span {
+  color: #ef5c6e;
+  padding: 1px 8px;
+}
+
+body.side-menu-visible #side-menu .close span:hover {
+  color: #ef5c6e;
+}
+
+body.side-menu-visible #side-menu .nav-link {
+  color: #6e50f0;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body.side-menu-visible #side-menu .nav-link:hover {
+  color: #ef5c6e;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 10px 6px;
+  margin-left: 6px;
+}
+
+/* Side Navbar Ends */
