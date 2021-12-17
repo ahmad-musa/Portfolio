@@ -8,7 +8,12 @@
 
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./image/icon.png"/>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- CSS STYLESHEET -->
   <link rel="stylesheet" href="./css/reset.css">
@@ -16,46 +21,43 @@
   <title>Portfolio</title>
 
   <style>
+    .header {
+      padding: 1em;
+    }
 
-.header {
-  padding: 1em;
-}
+    .header .top {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.header .top {
-  display: flex;
-  justify-content: space-between;
-}
+    .header .top .left {
+      display: flex;
+    }
 
-.header .top .left {
-  display: flex;
-}
+    .header .top .left i {
+      padding: 1em;
+    }
 
-.header .top .left i {
-  padding: 1em;
-}
+    .header .top .mid {
+      text-align: center;
+    }
 
-.header .top .mid {
-  text-align: center;
-}
+    .header .top .mid a img {
+      width: 15%;
+    }
 
-.header .top .mid a img {
-  width: 15%;
-}
+    .header .top .right {
+      display: flex;
+      height: 3em;
+    }
 
-.header .top .right {
-  display: flex;
-  height: 3em;
-}
+    .header .top .right i {
+      padding: 1.12em;
+    }
 
-.header .top .right i {
-  padding: 1.12em;
-}
-
-.footer .credit {
-  text-align: center;
-}
-
-
+    .footer .credit {
+      text-align: center;
+    }
   </style>
 
 
@@ -69,24 +71,24 @@
   <header class="header" id="home">
 
     <div class="container">
-      
+
       <div class="top">
 
-        <div class="left"> 
-          <a href="#"> <i class="fas fa-bars"></i> </a> 
-          <a href="#"> <i class="fas fa-search"></i> </a> 
-          
+        <div class="left">
+          <a href="#"> <i class="fas fa-bars"></i> </a>
+          <a href="#"> <i class="fas fa-search"></i> </a>
+
         </div>
-        
-        <div class="mid"> 
+
+        <div class="mid">
           <a class="navbar-brand logo" href="#home"><img src="./image/logo.png" alt=""> </a>
         </div>
-        
+
         <div class="right">
-          <a href="#"> <i class="far fa-bell"></i> </a> 
-          
+          <a href="#"> <i class="far fa-bell"></i> </a>
+
         </div>
-        
+
       </div>
 
     </div>
@@ -113,10 +115,10 @@
 
   <footer class="footer" id="footer">
 
-      <p class="credit">
-        &copy; copyright: All rights reserved by <a href="https://github.com/ahmad-musa" target="_blank"
-          class="dev">Musa</a>
-      </p>
+    <p class="credit">
+      &copy; copyright: All rights reserved by <a href="https://github.com/ahmad-musa" target="_blank"
+        class="dev">Musa</a>
+    </p>
 
   </footer>
 
