@@ -1,0 +1,62 @@
+/* Header Section Starts */
+
+.header {
+    // width: auto;
+    overflow-x: hidden;
+
+
+    /* Side Navbar Starts (Better Nav) */
+
+    body.side-menu-visible #side-menu {
+        transform: translateX(-230px);
+        padding: 20px 15px;
+
+        .close {
+            background: $white;
+            border: 2px solid $color2;
+            /* padding: 1px 8px; */
+            border-radius: 5px;
+
+            &:hover {
+                border: 2px solid $color1;
+            }
+
+            span {
+                color: $color2;
+                padding: 1px 8px;
+
+                &:hover {
+                    color: $color1;
+                }
+            }
+        }
+
+        .nav-link {
+            color: $color1;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 16px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: $color2;
+                font-size: 30px;
+                font-weight: 800;
+                padding: 8px 6px;
+                margin-left: 6px;
+            }
+        }
+
+    }
+
+    // #side-menu {
+    //     padding: 20px 15px;
+    // }
+
+    /* Side Navbar Ends */
+
+
+}
+
+/* Header Section Ends */

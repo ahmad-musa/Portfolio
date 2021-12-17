@@ -1,0 +1,45 @@
+
+// COLORS 
+
+
+$clr_ash: #6f6f6f;
+$clr_ash_dark: #555;
+$clr_blue: #1a237e;
+$clr_link: #09f;
+$clr_border: #f4511e;
+$red : #ed1c24;
+
+
+$color1: ;
+$color2: ;
+$color3: ;
+$white: #fff;
+$black: #121212;
+
+// FONTS 
+
+
+@font-face {
+    font-family: 'Surjo';
+    src: url(../lib/fonts/Shurjo\ UNICODE\ Regular.ttf);
+}
+
+$fonts: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",
+        sans-serif;
+
+// FONT SIZE
+
+$fs_xl  : 2.8rem;
+$fs_l  : 2.2rem;
+$fs_m  : 2rem;
+$fs_s  : 1.6rem;
+$fs_xs  : 1.4rem;
+
+
+// Spacing
+
+$s4: 2rem;
+$s3: 1.6rem;
+$s2: 0.8rem;
+$s1: 0.4rem;
+
