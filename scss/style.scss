@@ -1,11 +1,12 @@
 @import 'config';
+@import 'globalclass';
 @import 'header';
 
 
 // Main Section Starts
 
 .main {
-    color: black;
+    color: $black;
 }
 
 // Main Section Ends
@@ -22,5 +23,3 @@
 
 
 @import 'footer';
-
-@import 'responsive';

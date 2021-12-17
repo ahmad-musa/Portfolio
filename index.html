@@ -15,61 +15,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 
-   <!-- Bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   <!-- Font Awesome -->
+  <!-- Font Awesome -->
 
-   <!-- online cdn -->
-   <!-- <script src="https://kit.fontawesome.com/cda880dbf7.js"> </script>  -->
-   
-   <!-- offline link -->
-   <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
+  <!-- online cdn -->
+  <!-- <script src="https://kit.fontawesome.com/cda880dbf7.js"> </script>  -->
+
+  <!-- offline link -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+
+  <!-- Better Nav -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+
+
 
   <!-- CSS STYLESHEET -->
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Portfolio</title>
-
-  <style>
-    .header {
-      padding: 1em;
-    }
-
-    .header .top {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .header .top .left {
-      display: flex;
-    }
-
-    .header .top .left i {
-      padding: 1em;
-    }
-
-    .header .top .mid {
-      text-align: center;
-    }
-
-    .header .top .mid a img {
-      width: 15%;
-    }
-
-    .header .top .right {
-      display: flex;
-      height: 3em;
-    }
-
-    .header .top .right i {
-      padding: 1.12em;
-    }
-
-    .footer .credit {
-      text-align: center;
-    }
-  </style>
 
 
 </head>
@@ -81,26 +49,50 @@
 
   <header class="header" id="home">
 
-    <div class="container">
-
-      <div class="top">
+    <div class="container nav_container">
 
         <div class="left">
-          <a href="#"> <i class="fas fa-bars"></i> </a>
-          <a href="#"> <i class="fas fa-search"></i> </a>
-
-        </div>
-
-        <div class="mid">
           <a class="navbar-brand logo" href="#home"><img src="./image/logo.png" alt=""> </a>
-        </div>
-
-        <div class="right">
-          <a href="#"> <i class="far fa-bell"></i> </a>
 
         </div>
 
-      </div>
+        <nav class="navbar navbar-expand-md better-bootstrap-nav-right navbar_spacing" id="Nav">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> <i class="fas fa-bars icon"></i> </span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active btn-click" aria-current="page" href="#">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click" href="#">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click " href="#">service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click " href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-click download" href="#">download CV</a>
+              </li>
+
+              </ul>
+
+            </div>
+        </nav>
+
 
     </div>
 
@@ -146,7 +138,8 @@
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
- 
+  <!-- Better Nav -->
+  <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 
 </body>
 

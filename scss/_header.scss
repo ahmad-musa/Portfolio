@@ -3,59 +3,112 @@
 .header {
     // width: auto;
     overflow-x: hidden;
+    padding: 2rem;
 
+    .nav_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
 
-    /* Side Navbar Starts (Better Nav) */
-
-    body.side-menu-visible #side-menu {
-        transform: translateX(-230px);
-        padding: 20px 15px;
-
-        .close {
-            background: $white;
-            border: 2px solid $color2;
-            /* padding: 1px 8px; */
-            border-radius: 5px;
-
-            &:hover {
-                border: 2px solid $color1;
+        a {
+            img {
+                // width: 45%;
+                width: 7rem;
+                // width: 8vw;
             }
+        }
 
-            span {
-                color: $color2;
-                padding: 1px 8px;
+        #Nav{
+
+            .nav-link {
+                color: $black;
+                font-size: $fs_l;
+                font-weight: 600;
+                padding: .75rem;
+                margin: 0 .75rem;
+                text-transform: capitalize;
 
                 &:hover {
                     color: $color1;
                 }
+
+                &.active{
+                    color: $color1;
+                    
+                    &:hover{
+                        color: $black;
+
+                    }
+                }
+
+                &.download{
+                    border: 2px solid $color1;
+                    border-radius: 100px;
+                    padding: .75rem 1.5rem;
+
+                    &:hover{
+                        border: 2px solid $black;
+                        background: $black;
+                        color: $color1;
+                    }
+                }
+
+
             }
+
+            
         }
 
-        .nav-link {
-            color: $color1;
-            font-size: 24px;
-            font-weight: 600;
-            padding: 16px 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
 
-            &:hover {
-                color: $color2;
-                font-size: 30px;
-                font-weight: 800;
-                padding: 8px 6px;
-                margin-left: 6px;
+
+        /* Side Navbar Starts (Better Nav) */
+
+        #side-menu {
+            transform: translateX(-230px);
+            padding: 20px 15px;
+
+            .close {
+                background: $white;
+                border: 2px solid $color2;
+                /* padding: 1px 8px; */
+                border-radius: 5px;
+
+                &:hover {
+                    border: 2px solid $color1;
+                }
+
+                span {
+                    color: $color2;
+                    padding: 1px 8px;
+
+                    &:hover {
+                        color: $color1;
+                    }
+                }
             }
+
+            .nav-link {
+                color: red;
+                font-size: 24px;
+                font-weight: 600;
+                padding: 16px 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: $color2;
+                    font-size: 30px;
+                    font-weight: 800;
+                    padding: 8px 6px;
+                    margin-left: 6px;
+                }
+            }
+
         }
 
+
+        /* Side Navbar Ends */
     }
-
-    // #side-menu {
-    //     padding: 20px 15px;
-    // }
-
-    /* Side Navbar Ends */
-
 
 }
 

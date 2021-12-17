@@ -8,40 +8,89 @@
   src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 /* Header Section Starts */
 .header {
   overflow-x: hidden;
+  padding: 2rem;
+}
+
+.header .nav_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
   /* Side Navbar Starts (Better Nav) */
   /* Side Navbar Ends */
 }
 
-.header body.side-menu-visible #side-menu {
+.header .nav_container a img {
+  width: 7rem;
+}
+
+.header .nav_container #Nav .nav-link {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: .75rem;
+  margin: 0 .75rem;
+  text-transform: capitalize;
+}
+
+.header .nav_container #Nav .nav-link:hover {
+  color: #ef5c6e;
+}
+
+.header .nav_container #Nav .nav-link.active {
+  color: #ef5c6e;
+}
+
+.header .nav_container #Nav .nav-link.active:hover {
+  color: #000;
+}
+
+.header .nav_container #Nav .nav-link.download {
+  border: 2px solid #ef5c6e;
+  border-radius: 100px;
+  padding: .75rem 1.5rem;
+}
+
+.header .nav_container #Nav .nav-link.download:hover {
+  border: 2px solid #000;
+  background: #000;
+  color: #ef5c6e;
+}
+
+.header .nav_container #side-menu {
   transform: translateX(-230px);
   padding: 20px 15px;
 }
 
-.header body.side-menu-visible #side-menu .close {
+.header .nav_container #side-menu .close {
   background: #fff;
   border: 2px solid #6e50f0;
   /* padding: 1px 8px; */
   border-radius: 5px;
 }
 
-.header body.side-menu-visible #side-menu .close:hover {
+.header .nav_container #side-menu .close:hover {
   border: 2px solid #ef5c6e;
 }
 
-.header body.side-menu-visible #side-menu .close span {
+.header .nav_container #side-menu .close span {
   color: #6e50f0;
   padding: 1px 8px;
 }
 
-.header body.side-menu-visible #side-menu .close span:hover {
+.header .nav_container #side-menu .close span:hover {
   color: #ef5c6e;
 }
 
-.header body.side-menu-visible #side-menu .nav-link {
-  color: #ef5c6e;
+.header .nav_container #side-menu .nav-link {
+  color: red;
   font-size: 24px;
   font-weight: 600;
   padding: 16px 0;
@@ -49,7 +98,7 @@
   letter-spacing: 2px;
 }
 
-.header body.side-menu-visible #side-menu .nav-link:hover {
+.header .nav_container #side-menu .nav-link:hover {
   color: #6e50f0;
   font-size: 30px;
   font-weight: 800;
@@ -59,5 +108,9 @@
 
 /* Header Section Ends */
 .main {
-  color: black;
+  color: #000;
+}
+
+.footer .credit {
+  text-align: center;
 }
