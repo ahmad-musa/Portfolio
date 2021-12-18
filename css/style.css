@@ -51,7 +51,7 @@ img {
 .header .nav_container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .header .nav_container a img {
@@ -92,6 +92,10 @@ img {
 }
 
 /* Header Section Ends */
+.hero {
+  position: relative;
+}
+
 .hero .top {
   margin: 1.6rem 0;
   font-family: "Montserrat", sans-serif;
@@ -129,7 +133,7 @@ img {
   font-weight: 600;
   padding: 0.8rem 2rem;
   border-radius: 25px;
-  margin: 0.4rem;
+  margin: 0.8rem;
 }
 
 .hero .bottom .btn_common:hover {
@@ -153,17 +157,23 @@ img {
 
 .hero .bottom .tinybar {
   position: relative;
+  outline: 2px solid #fff;
 }
 
-.hero .bottom .tinybar::after {
+.hero .bottom .tinybar::before {
   content: '';
   position: absolute;
   width: 15px;
   height: 5px;
-  right: 0;
+  right: -2px;
   top: 25px;
   transform: translateY(-50%);
   background: #ef5c6e;
+}
+
+.hero .bottom .tinybar:hover::before {
+  right: -17px;
+  height: 4px;
 }
 
 .hero .container_box {
@@ -288,6 +298,36 @@ img {
 .hero .container_box .container_4 .mini_box .box_inside .box_inside2 i {
   color: #ef5c6e;
   font-size: 2.5rem;
+}
+
+.hero .mouse_click::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 30px;
+  outline: 2px solid #000;
+  border-radius: 8px;
+  bottom: -110px;
+  right: 200px;
+}
+
+.hero .mouse_click::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 8px;
+  background: #000;
+  border-radius: 8px;
+  bottom: -95px;
+  right: 207px;
+}
+
+.hero .mouse_click:hover::before {
+  background: #ef5c6e;
+}
+
+.hero .mouse_click:hover::after {
+  background: #fff;
 }
 
 .main {

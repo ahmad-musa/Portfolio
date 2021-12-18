@@ -7,6 +7,8 @@
 
 .hero {
 
+    position: relative;
+
     .top{
 
         margin: $s4 0;
@@ -49,7 +51,7 @@
             font-weight: 600;
             padding: $s2 $s5;
             border-radius: 25px;
-            margin: $s1;
+            margin: $s2;
 
             &:hover{
                 color: $color1;
@@ -73,17 +75,25 @@
 
         .tinybar{
             position: relative;
+            outline: 2px solid $white;
 
-            &::after{
+            &::before{
                 content: '';
                 position: absolute;
                 width: 15px;
                 height: 5px;
-                right: 0;
+                right: -2px;
                 top: 25px;
                 transform: translateY(-50%);
                 // top: 50%;
                 background: $color1;
+
+            }
+
+            
+            &:hover::before{
+                right: -17px;
+                height: 4px;
             }
         }
     }
@@ -234,6 +244,49 @@
 
 
     }
+
+    .mouse_click{
+        // padding: .65rem;
+        // background: $black;
+        // outline: 2px solid $black;
+        // border-radius: 8px;
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 30px;
+            // background: $black;
+            outline: 2px solid $black;
+            border-radius: 8px;
+            bottom: -110px;
+            right: 200px;
+        }
+        
+        &::after{
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 8px;
+            // background: $black;
+            background: $black;
+            border-radius: 8px;
+            bottom: -95px;
+            right: 207px;
+        }
+
+        &:hover{
+            &::before{
+                background: $color1;
+                // outline: 2px solid $white;
+            }
+            &::after{
+                background: $white;
+            }
+        }
+    }
+
+    
 }
 
 
