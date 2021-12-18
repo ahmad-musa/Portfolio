@@ -7,8 +7,92 @@
 
 .hero {
 
+    .top{
+
+        margin: $s4 0;
+        font-family: $font1;
+        padding: $s2;
+
+        .subhead{
+            font-size: $fs_l;
+            font-family: $font1_medium;
+            font-weight: 600;
+            padding: $s2 0;
+        }
+        
+        .xl{
+            padding: $s3 0;
+            font-size: $fs_xxl;
+            font-family: $font1_bold;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+        }
+
+        .colored{
+            color: $color2;
+        }
+
+        .ash{
+            color: $clr_text;
+            font-family: $font1;
+            font-weight: 600;
+            padding: $s2 0;
+        }
+
+    }
+
+    .bottom{
+
+
+        .btn_common{
+            font-family: $font1;
+            font-weight: 600;
+            padding: $s2 $s5;
+            border-radius: 25px;
+            margin: $s1;
+
+            &:hover{
+                color: $color1;
+                background: $white;
+                outline: 2px solid $color1;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .btn_colored{
+            color: $white;
+            background: $color1;
+            outline: 2px solid $color1;
+
+            &:hover{
+                color: $color1;
+                background: $white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .tinybar{
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 5px;
+                right: 0;
+                top: 25px;
+                transform: translateY(-50%);
+                // top: 50%;
+                background: $color1;
+            }
+        }
+    }
+
+
     .container_box {
         position: relative;
+        width: auto;
+        margin-left: 25%;
 
         .container_1 {
 
@@ -59,25 +143,38 @@
                     position: absolute;
                     top: 10px;
                     right: -70px;
-                    width: 100px;
-                    height: 100px;
+                    width: 150px;
+                    height: 150px;
                     background: $white;
                     border-radius: 50%;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
                 }
+
+                .box1_inside{
+                    width: 150px;
+                    height: 150px;
+                }
+
 
                 .box_2 {
                     position: absolute;
                     bottom: -35px;
                     left: -35px;
-                    width: 150px;
-                    height: 150px;
+                    width: 200px;
+                    height: 200px;
                     background: $white;
                     border-radius: 50%;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
                 }
+
+                
+                .box2_inside{
+                    width: 200px;
+                    height: 200px;
+                }
+
 
                 .box_3 {
                     position: absolute;
@@ -87,9 +184,50 @@
                     height: 80px;
                     background: $white;
                     border-radius: 50%;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
                 }
+
+                
+                .box3_inside{
+                    width: 80px;
+                    height: 80px;
+                }
+
+
+                .box_inside {
+
+                    position: relative;
+                    border-radius: 50%;
+
+                    .box_inside2{
+
+                        position:absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+
+                        h2 {
+                            color: $color2;
+                            font-size: $fs_xl;
+                            font-weight: 800;
+                        }
+    
+                        h3 {
+                            color: $black;
+                            font-size: $fs_lm;
+                            font-weight: 800;
+                        }
+
+                        i{
+                            color: $color1;
+                            font-size: $fs_xl;
+                        }
+                    }
+                    
+
+                }
+
 
             }
         }

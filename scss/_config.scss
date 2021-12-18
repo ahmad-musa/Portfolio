@@ -2,7 +2,7 @@
 
 $color1 : #ef5c6e;
 $color2 : #6e50f0;
-$clr_text : #b4b2c0;
+$clr_text : #8c8c8f;
 $clr_bg : #f7f8fc;
 $white : #fff;
 $black : #000;
@@ -16,11 +16,32 @@ $black : #000;
 }
 
 @font-face {
+    font-family: 'Montserrat Bold', sans-serif;
+    src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Thin', sans-serif;
+    src: url(../assets/fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Medium', sans-serif;
+    src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
     font-family: 'Open Sans', sans-serif;
     src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 $font1: 'Montserrat',
+sans-serif;
+$font1_bold: 'Montserrat Bold',
+sans-serif;
+$font1_medium: 'Montserrat Medium',
+sans-serif;
+$font1_thin: 'Montserrat Thin',
 sans-serif;
 $font2: 'Open Sans',
 sans-serif;
@@ -36,8 +57,11 @@ sans-serif;
 
 // FONT SIZE
 
-$fs_xl : 2rem;
-$fs_l : 1.25rem;
+$fs_xxl : 3rem;
+$fs_xl : 2.5rem;
+$fs_l : 1.75rem;
+$fs_lm : 1.5rem;
+$fs_ls : 1.25rem;
 $fs_m : 1rem;
 $fs_s : .75rem;
 $fs_xs : .5rem;
@@ -45,7 +69,8 @@ $fs_xs : .5rem;
 
 // Spacing
 
-$s4: 2rem;
-$s3: 1.6rem;
+$s5: 2rem;
+$s4: 1.6rem;
+$s3: 1rem;
 $s2: 0.8rem;
 $s1: 0.4rem;
