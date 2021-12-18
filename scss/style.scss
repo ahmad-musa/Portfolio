@@ -1,13 +1,12 @@
 @import 'config';
 @import 'globalclass';
+@import 'sidelinks';
 @import 'header';
 
 
 // Hero Section Starts
 
 .hero {
-
-    position: relative;
 
     .top{
 
@@ -246,10 +245,6 @@
     }
 
     .mouse_click{
-        // padding: .65rem;
-        // background: $black;
-        // outline: 2px solid $black;
-        // border-radius: 8px;
         
         &::before{
             position: absolute;
@@ -259,7 +254,7 @@
             // background: $black;
             outline: 2px solid $black;
             border-radius: 8px;
-            bottom: -110px;
+            bottom: 50px;
             right: 200px;
         }
         
@@ -271,7 +266,7 @@
             // background: $black;
             background: $black;
             border-radius: 8px;
-            bottom: -95px;
+            bottom: 65px;
             right: 207px;
         }
 

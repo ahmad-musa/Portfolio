@@ -1,0 +1,44 @@
+// Side social media links
+
+.home{
+    
+    position: relative;
+
+    .row_sided{
+        position: absolute;
+        top: 360px;
+        left: -80px;
+
+
+        ul{
+            display: flex;
+            transform: rotate(270deg);
+
+            a{
+                padding: $s2 $s3;
+                
+                i,span{
+                    color: $color2;
+                    padding: 0 $s1 0 0;
+                }
+
+                span{
+                    color: $black;
+                    font-weight: 800;
+                }
+
+                &:hover{
+
+                    outline: 2px solid $color2;
+                    border-radius: 25px;
+
+                    i,span{
+                        color: $color1;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
