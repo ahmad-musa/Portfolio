@@ -61,7 +61,8 @@ img {
   padding: 0.8rem 1rem;
 }
 
-.home .row_sided ul a i, .home .row_sided ul a span {
+.home .row_sided ul a i,
+.home .row_sided ul a span {
   color: #6e50f0;
   padding: 0 0.4rem 0 0;
 }
@@ -76,7 +77,8 @@ img {
   border-radius: 25px;
 }
 
-.home .row_sided ul a:hover i, .home .row_sided ul a:hover span {
+.home .row_sided ul a:hover i,
+.home .row_sided ul a:hover span {
   color: #ef5c6e;
 }
 

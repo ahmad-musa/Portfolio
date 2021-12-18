@@ -8,20 +8,20 @@
 
 .hero {
 
-    .top{
+    .top {
 
         margin: $s4 0;
         font-family: $font1;
         padding: $s2;
 
-        .subhead{
+        .subhead {
             font-size: $fs_l;
             font-family: $font1_medium;
             font-weight: 600;
             padding: $s2 0;
         }
-        
-        .xl{
+
+        .xl {
             padding: $s3 0;
             font-size: $fs_xxl;
             font-family: $font1_bold;
@@ -29,11 +29,11 @@
             text-transform: uppercase;
         }
 
-        .colored{
+        .colored {
             color: $color2;
         }
 
-        .ash{
+        .ash {
             color: $clr_text;
             font-family: $font1;
             font-weight: 600;
@@ -42,17 +42,17 @@
 
     }
 
-    .bottom{
+    .bottom {
 
 
-        .btn_common{
+        .btn_common {
             font-family: $font1;
             font-weight: 600;
             padding: $s2 $s5;
             border-radius: 25px;
             margin: $s2;
 
-            &:hover{
+            &:hover {
                 color: $color1;
                 background: $white;
                 outline: 2px solid $color1;
@@ -60,23 +60,23 @@
             }
         }
 
-        .btn_colored{
+        .btn_colored {
             color: $white;
             background: $color1;
             outline: 2px solid $color1;
 
-            &:hover{
+            &:hover {
                 color: $color1;
                 background: $white;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             }
         }
 
-        .tinybar{
+        .tinybar {
             position: relative;
             outline: 2px solid $white;
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 width: 15px;
@@ -89,8 +89,8 @@
 
             }
 
-            
-            &:hover::before{
+
+            &:hover::before {
                 right: -17px;
                 height: 4px;
             }
@@ -106,6 +106,7 @@
         .container_1 {
 
             .img_bg {
+                background-color: rgb(87, 87, 87);
                 height: 400px;
                 width: 400px;
                 border-radius: 50%;
@@ -119,6 +120,7 @@
             top: 0px;
 
             .img_man {
+                background-color: rgb(235, 129, 88);
                 border-radius: 50%;
                 height: 400px;
                 width: 400px;
@@ -160,7 +162,7 @@
 
                 }
 
-                .box1_inside{
+                .box1_inside {
                     width: 150px;
                     height: 150px;
                 }
@@ -178,8 +180,8 @@
 
                 }
 
-                
-                .box2_inside{
+
+                .box2_inside {
                     width: 200px;
                     height: 200px;
                 }
@@ -197,8 +199,8 @@
 
                 }
 
-                
-                .box3_inside{
+
+                .box3_inside {
                     width: 80px;
                     height: 80px;
                 }
@@ -209,31 +211,31 @@
                     position: relative;
                     border-radius: 50%;
 
-                    .box_inside2{
+                    .box_inside2 {
 
-                        position:absolute;
+                        position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%,-50%);
+                        transform: translate(-50%, -50%);
 
                         h2 {
                             color: $color2;
                             font-size: $fs_xl;
                             font-weight: 800;
                         }
-    
+
                         h3 {
                             color: $black;
                             font-size: $fs_lm;
                             font-weight: 800;
                         }
 
-                        i{
+                        i {
                             color: $color1;
                             font-size: $fs_xl;
                         }
                     }
-                    
+
 
                 }
 
@@ -244,9 +246,11 @@
 
     }
 
-    .mouse_click{
+    //  Clickable Mouse Starts 
+    
+    .mouse_click {
         
-        &::before{
+        &::before {
             position: absolute;
             content: '';
             width: 20px;
@@ -258,7 +262,7 @@
             right: 200px;
         }
         
-        &::after{
+        &::after {
             position: absolute;
             content: '';
             width: 5px;
@@ -269,18 +273,20 @@
             bottom: 65px;
             right: 207px;
         }
-
-        &:hover{
-            &::before{
+        
+        &:hover {
+            &::before {
                 background: $color1;
                 // outline: 2px solid $white;
             }
-            &::after{
+            
+            &::after {
                 background: $white;
             }
         }
     }
-
+    
+    //  Clickable Mouse Ends 
     
 }
 
