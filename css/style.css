@@ -32,6 +32,7 @@ img {
 }
 
 .home {
+  background: #6b6b6b;
   background: url(../image/bg1.jpg);
   background-size: cover;
   min-height: 100vh;
@@ -219,6 +220,7 @@ img {
 }
 
 .hero .container_box .container_1 .img_bg {
+  background-color: #575757;
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -230,6 +232,7 @@ img {
 }
 
 .hero .container_box .container_2 .img_man {
+  background-color: #eb8158;
   border-radius: 50%;
   height: 400px;
   width: 400px;
