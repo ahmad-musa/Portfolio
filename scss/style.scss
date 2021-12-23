@@ -10,7 +10,7 @@
 
     .top {
 
-        margin: $s4 0;
+        // margin: $s4 0;
         font-family: $font1;
         padding: $s2;
 
@@ -152,7 +152,7 @@
                 .box_1 {
                     position: absolute;
                     top: 10px;
-                    right: -70px;
+                    right: -100px;
                     width: 150px;
                     height: 150px;
                     background: $white;
@@ -271,6 +271,7 @@
             border-radius: 8px;
             bottom: 65px;
             right: 207px;
+            animation: 1.75s up_down linear infinite;
         }
         
         &:hover {
@@ -286,6 +287,30 @@
     }
     
     //  Clickable Mouse Ends 
+    
+}
+
+@keyframes up_down {
+
+    0%{
+        bottom: 67px;
+    }
+
+    25%{
+        bottom: 65px;
+    }
+
+    50%{
+        bottom: 63px;
+    }
+
+    75%{
+        bottom: 65px;
+    }
+
+    100%{
+        bottom: 67px;
+    }
     
 }
 
