@@ -17,3 +17,107 @@ img{
     max-width: 80%;
     margin: 0 auto;
 }
+
+.container_section{
+    padding: 4rem 0;
+}
+
+
+
+.colored {
+    color: $color2;
+}
+
+.ash {
+    color: $clr_text;
+    padding: $s2 0;
+}
+
+.subhead{
+    font-weight: 600;
+    font-family: $font1;
+    font-size: $fs_l;
+}
+
+.head{
+    font-weight: 600;
+    font-family: $font1_medium;
+    font-size: $fs_xl;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding: $s2 0;
+}
+
+.text{
+    text-align: justify;
+}
+
+.signature{
+    font-size: $fs_l;
+    font-family: $font2;
+    color: $color1;
+    font-weight: 600;
+    transform: rotate(-15deg);
+    padding: $s1 $s3;
+    border-radius: 25px;
+
+    &:hover {
+        color: $color2;
+        outline: 2px solid $color2;
+        transform: rotate(0deg);
+    }
+}
+
+
+// BUTTONS 
+
+.btn_common {
+    font-family: $font1;
+    font-weight: 500;
+    padding: $s2 $s5;
+    border-radius: 25px;
+    margin: $s2;
+
+    &:hover {
+        color: $color1;
+        background: $white;
+        outline: 2px solid $color1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn_colored {
+    color: $white;
+    background: $color1;
+    outline: 2px solid $color1;
+
+    &:hover {
+        color: $color1;
+        background: $white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.tinybar {
+    position: relative;
+    outline: 2px solid $white;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 5px;
+        right: -2px;
+        top: 25px;
+        transform: translateY(-50%);
+        // top: 50%;
+        background: $color1;
+
+    }
+
+
+    &:hover::before {
+        right: -17px;
+        height: 4px;
+    }
+}

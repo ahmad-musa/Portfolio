@@ -1,30 +1,30 @@
 @font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  font-family: 'Poppins', sans-serif;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat Bold', sans-serif;
-  src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+  font-family: 'Poppins Thin', sans-serif;
+  src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat Thin', sans-serif;
-  src: url(../assets/fonts/Montserrat/Montserrat-Thin.ttf);
+  font-family: 'Poppins Medium', sans-serif;
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat Medium', sans-serif;
-  src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+  font-family: 'Poppins Bold', sans-serif;
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
-  src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: 'Parisienne', cursive;
+  src: url(../assets/fonts/Parisienne/Parisienne-Regular.ttf);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -41,6 +41,102 @@ img {
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.container_section {
+  padding: 4rem 0;
+}
+
+.colored {
+  color: #6e50f0;
+}
+
+.ash {
+  color: #9b9b9b;
+  padding: 0.8rem 0;
+}
+
+.subhead {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+}
+
+.head {
+  font-weight: 600;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 0.8rem 0;
+}
+
+.text {
+  text-align: justify;
+}
+
+.signature {
+  font-size: 1.75rem;
+  font-family: "Parisienne", cursive;
+  color: #ef5c6e;
+  font-weight: 600;
+  transform: rotate(-15deg);
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+}
+
+.signature:hover {
+  color: #6e50f0;
+  outline: 2px solid #6e50f0;
+  transform: rotate(0deg);
+}
+
+.btn_common {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  margin: 0.8rem;
+}
+
+.btn_common:hover {
+  color: #ef5c6e;
+  background: #fff;
+  outline: 2px solid #ef5c6e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_colored {
+  color: #fff;
+  background: #ef5c6e;
+  outline: 2px solid #ef5c6e;
+}
+
+.btn_colored:hover {
+  color: #ef5c6e;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tinybar {
+  position: relative;
+  outline: 2px solid #fff;
+}
+
+.tinybar::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  right: -2px;
+  top: 25px;
+  transform: translateY(-50%);
+  background: #ef5c6e;
+}
+
+.tinybar:hover::before {
+  right: -17px;
+  height: 4px;
 }
 
 .home {
@@ -70,7 +166,7 @@ img {
 
 .home .row_sided ul a span {
   color: #000;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .home .row_sided ul a:hover {
@@ -134,39 +230,28 @@ img {
 
 /* Header Section Ends */
 .hero .top {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0.8rem;
 }
 
 .hero .top .subhead {
   font-size: 1.75rem;
-  font-family: "Montserrat Medium", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
   font-weight: 600;
   padding: 0.8rem 0;
 }
 
 .hero .top .xl {
   padding: 1rem 0;
-  font-size: 3rem;
-  font-family: "Montserrat Bold", sans-serif;
+  font-size: 2.5rem;
+  font-family: "Poppins Bold", sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
 
-.hero .top .colored {
-  color: #6e50f0;
-}
-
-.hero .top .ash {
-  color: #8c8c8f;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding: 0.8rem 0;
-}
-
 .hero .bottom .btn_common {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   padding: 0.8rem 2rem;
   border-radius: 25px;
   margin: 0.8rem;
@@ -323,19 +408,19 @@ img {
 
 .hero .container_box .container_4 .mini_box .box_inside .box_inside2 h2 {
   color: #6e50f0;
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .hero .container_box .container_4 .mini_box .box_inside .box_inside2 h3 {
   color: #000;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .hero .container_box .container_4 .mini_box .box_inside .box_inside2 i {
   color: #ef5c6e;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .hero .mouse_click::before {
@@ -388,7 +473,6 @@ img {
 }
 
 .about {
-  color: #000;
   position: relative;
   min-height: 90vh;
 }
@@ -435,8 +519,17 @@ img {
 
 .about .col_about_left .text_container .box_text .xxxl {
   font-size: 270px;
-  font-weight: 900;
+  font-weight: 800;
   color: #fff;
+}
+
+.about .col_about_right .top {
+  padding: 1.6rem;
+}
+
+.about .col_about_right .bottom {
+  padding: 0.4rem 1.6rem;
+  font-weight: 600;
 }
 
 .footer .credit {

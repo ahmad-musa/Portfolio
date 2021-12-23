@@ -29,17 +29,6 @@
             text-transform: uppercase;
         }
 
-        .colored {
-            color: $color2;
-        }
-
-        .ash {
-            color: $clr_text;
-            font-family: $font1;
-            font-weight: 600;
-            padding: $s2 0;
-        }
-
     }
 
     .bottom {
@@ -47,7 +36,7 @@
 
         .btn_common {
             font-family: $font1;
-            font-weight: 600;
+            font-weight: 500;
             padding: $s2 $s5;
             border-radius: 25px;
             margin: $s2;
@@ -221,13 +210,13 @@
                         h2 {
                             color: $color2;
                             font-size: $fs_xl;
-                            font-weight: 800;
+                            font-weight: 600;
                         }
 
                         h3 {
                             color: $black;
                             font-size: $fs_lm;
-                            font-weight: 800;
+                            font-weight: 600;
                         }
 
                         i {
@@ -328,7 +317,6 @@
 // About Section Starts
 
 .about {
-    color: $black;
     position: relative;
     min-height: 90vh;
 
@@ -375,7 +363,7 @@
 
                 .xxxl {
                     font-size: 270px;
-                    font-weight: 900;
+                    font-weight: 800;
                     color: $white;
                 }
             }
@@ -386,6 +374,15 @@
 
     .col_about_right{
         
+        .top{
+            padding: $s4;
+        }
+        
+        .bottom{
+            padding: $s1 $s4;
+            font-weight: 600;
+
+        }
     }
 
 

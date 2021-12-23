@@ -2,7 +2,7 @@
 
 $color1 : #ef5c6e;
 $color2 : #6e50f0;
-$clr_text : #8c8c8f;
+$clr_text : #9b9b9b;
 $clr_bg : #f7f8fc;
 $white : #fff;
 $black : #000;
@@ -11,40 +11,36 @@ $black : #000;
 // FONTS 
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
+    font-family: 'Poppins', sans-serif;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Montserrat Bold', sans-serif;
-    src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+    font-family: 'Poppins Thin', sans-serif;
+    src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
 }
 
 @font-face {
-    font-family: 'Montserrat Thin', sans-serif;
-    src: url(../assets/fonts/Montserrat/Montserrat-Thin.ttf);
+    font-family: 'Poppins Medium', sans-serif;
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Montserrat Medium', sans-serif;
-    src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+    font-family: 'Poppins Bold', sans-serif;
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
+
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Parisienne', cursive;
+    src: url(../assets/fonts/Parisienne/Parisienne-Regular.ttf);
 }
 
-$font1: 'Montserrat',
-sans-serif;
-$font1_bold: 'Montserrat Bold',
-sans-serif;
-$font1_medium: 'Montserrat Medium',
-sans-serif;
-$font1_thin: 'Montserrat Thin',
-sans-serif;
-$font2: 'Open Sans',
-sans-serif;
+$font1: 'Poppins', sans-serif;
+$font1_thin: 'Poppins Thin', sans-serif;
+$font1_medium: 'Poppins Medium', sans-serif;
+$font1_bold: 'Poppins Bold', sans-serif;
+$font2: 'Parisienne', cursive;
 
 $fonts: "Segoe UI",
 "Roboto",
@@ -57,8 +53,9 @@ sans-serif;
 
 // FONT SIZE
 
-$fs_xxl : 3rem;
-$fs_xl : 2.5rem;
+$fs_xxxl : 3rem;
+$fs_xxl : 2.5rem;
+$fs_xl : 2rem;
 $fs_l : 1.75rem;
 $fs_lm : 1.5rem;
 $fs_ls : 1.25rem;
