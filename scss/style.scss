@@ -249,6 +249,8 @@
             border-radius: 8px;
             bottom: 50px;
             right: 200px;
+            // bottom: 2%;
+            // right: 15%;
         }
 
         &::after {
@@ -261,6 +263,8 @@
             border-radius: 8px;
             bottom: 65px;
             right: 207px;
+            // bottom: 5%;
+            // right: 15.5%;
             animation: 1.75s up_down linear infinite;
         }
 
@@ -403,3 +407,4 @@
 
 @import 'footer';
 @import 'sidenav';
+@import 'responsive';
