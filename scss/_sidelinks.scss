@@ -1,13 +1,14 @@
 // Side social media links
 
-.home {
+body {
 
     position: relative;
 
     .row_sided {
-        position: absolute;
+        position: fixed;
         top: 360px;
-        left: -80px;
+        left: -100px;
+        z-index: 100;
 
 
         ul {

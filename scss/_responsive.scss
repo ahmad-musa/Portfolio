@@ -1,13 +1,5 @@
 @media (min-width: 767.99px) and (max-width: 991.99px) {
 
-    .navbar-expand-md {
-        .navbar-nav {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-        }
-    }
-
     .header {
         padding: 1.25rem 0 1rem 0;
     }
@@ -81,20 +73,19 @@
         margin: 0 auto;
     }
 
-    .home {
 
-        .row_sided {
-            top: 90px;
-            left: 50%;
-            transform: translateX(-50%);
 
-            ul {
-                display: flex;
-                transform: rotate(0deg);
-            }
+    .row_sided {
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        ul {
+            display: flex;
+            transform: rotate(0deg);
         }
-
     }
+
 
     .hero {
 
@@ -234,19 +225,19 @@
 
             &::before {
 
-                bottom: 5vw;
-                right: 13vw;
-                // bottom: 50px;
-                // right: 75px;
+                // bottom: 5vw;
+                // right: 13vw;
+                bottom: 50px;
+                right: 75px;
                 // bottom: 2%;
                 // right: 15%;
             }
 
             &::after {
-                bottom: 8.5vw;
-                right: 14.3vw;
-                // bottom: 65px;
-                // right: 82px;
+                // bottom: 8.5vw;
+                // right: 14.3vw;
+                bottom: 65px;
+                right: 82px;
             }
 
             &:hover {
@@ -259,30 +250,6 @@
                     background: $white;
                 }
             }
-        }
-
-        @keyframes up_down {
-
-            0% {
-                bottom: 8.8vw;
-            }
-
-            25% {
-                bottom: 8.5vw;
-            }
-
-            50% {
-                bottom: 8.3vw;
-            }
-
-            75% {
-                bottom: 8.5vw;
-            }
-
-            100% {
-                bottom: 8.8vw;
-            }
-
         }
 
 
@@ -301,7 +268,7 @@
             .img_about {
                 width: 60vw;
             }
-            
+
             .box_about {
                 width: 60vw;
                 height: 60vw;
@@ -414,11 +381,11 @@
         flex: 0 0 calc(8.333333333333334*12%);
     }
 
-    .home {
+    .row_sided {
+        display: none;
+    }
 
-        .row_sided {
-            display: none;
-        }
+    .home {
 
         .header {
             padding: 0 1rem;
