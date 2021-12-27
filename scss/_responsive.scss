@@ -46,7 +46,7 @@
 
 }
 
-@media screen and (max-width: 767.98px) {
+@media (min-width: 575.99px) and (max-width: 767.98px) {
 
 
     .p_s3 {
@@ -73,9 +73,8 @@
         margin: 0 auto;
     }
 
-
-
     .row_sided {
+        position: absolute;
         top: 90px;
         left: 50%;
         transform: translateX(-50%);
@@ -107,118 +106,10 @@
             text-align: center;
         }
 
-        .container_box {
-            margin-left: 2%;
-
-            .container_1 {
-
-                .img_bg {
-                    height: 80vw;
-                    width: 80vw;
-                    border-radius: 50%;
-                }
-            }
 
 
-            .container_2 {
-                position: absolute;
-                top: 0px;
+        @include box_like;
 
-                .img_man {
-                    width: 80vw;
-                    height: 80vw;
-                }
-            }
-
-            .container_3 {
-                height: 85%;
-                width: 70%;
-                top: 10vw;
-                left: 10vw;
-            }
-
-            .container_4 {
-
-                height: 75%;
-                width: 84%;
-
-                .mini_box {
-                    height: 75%;
-
-                    .box_1 {
-                        width: 15vw;
-                        height: 15vw;
-                        right: -15%;
-                    }
-
-                    .box1_inside {
-                        width: 15vw;
-                        height: 15vw;
-                    }
-
-
-                    .box_2 {
-                        width: 20vw;
-                        height: 20vw;
-
-                    }
-
-
-                    .box2_inside {
-                        width: 20vw;
-                        height: 20vw;
-                    }
-
-
-                    .box_3 {
-                        width: 10vw;
-                        height: 10vw;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-                    }
-
-
-                    .box3_inside {
-                        width: 10vw;
-                        height: 10vw;
-                    }
-
-
-                    .box_inside {
-
-
-                        .box_inside2 {
-
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-
-                            h2 {
-                                color: $color2;
-                                font-size: $fs_ml;
-                                font-weight: 600;
-                            }
-
-                            h3 {
-                                color: $black;
-                                font-size: $fs_xs;
-                                font-weight: 600;
-                            }
-
-                            i {
-                                color: $color1;
-                                font-size: $fs_l;
-                            }
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
 
 
         .mouse_click {
@@ -381,23 +272,47 @@
         flex: 0 0 calc(8.333333333333334*12%);
     }
 
-    .row_sided {
-        display: none;
-    }
+    body {
 
-    .home {
+        .row_sided {
+            position: fixed;
+            bottom: 80px;
+            left: 0;
+            transform: none;
 
-        .header {
-            padding: 0 1rem;
-        }
+            ul {
+                display: flex;
+                flex-direction: column;
+                transform: rotate(0deg);
 
-        .top {
-            .xl {
-                padding: 0.4rem;
-                font-size: $s5;
-                letter-spacing: 3px;
+                a {
+                    span {
+                        display: none;
+                    }
+                }
             }
         }
+
+
+        .home {
+
+            .header {
+                padding: 0 1rem;
+            }
+
+            .top {
+                .xl {
+                    padding: 0.4rem;
+                    font-size: $s5;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+
+        .hero {
+            @include box_like;
+        }
+
     }
 
 }
