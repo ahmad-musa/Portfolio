@@ -332,21 +332,23 @@
         .img_about {
             background: url(../image/img_bg5.jpg) center;
             background-size: cover;
-            border-radius: 25px;
+            border-radius: 15px;
             text-align: center;
-            width: 550px;
+            width: 40vw;
             height: auto;
             overflow: hidden;
+            top: -20px;
+            position: relative;
 
         }
 
         .box_about {
             border: 5px solid $color2;
-            width: 560px;
-            height: 540px;
+            width: 40vw;
+            height: 40vw;
             position: absolute;
-            top: -60px;
-            left: -60px;
+            top: -16%;
+            left: -12%;
             z-index: 1;
         }
 
@@ -362,7 +364,7 @@
             .box_text {
 
                 position: absolute;
-                bottom: -120px;
+                bottom: -100px;
                 left: 16px;
 
                 .xxxl {
@@ -376,13 +378,13 @@
     }
 
 
-    .col_about_right{
-        
-        .top{
+    .col_about_right {
+
+        .top {
             padding: $s4;
         }
-        
-        .bottom{
+
+        .bottom {
             padding: $s1 $s4;
             font-weight: 600;
 

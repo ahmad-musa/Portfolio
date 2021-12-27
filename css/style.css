@@ -47,6 +47,10 @@ img {
   padding: 4rem 0 2rem 0;
 }
 
+.relative_box {
+  position: relative;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -490,20 +494,22 @@ img {
 .about .col_about_left .img_about {
   background: url(../image/img_bg5.jpg) center;
   background-size: cover;
-  border-radius: 25px;
+  border-radius: 15px;
   text-align: center;
-  width: 550px;
+  width: 40vw;
   height: auto;
   overflow: hidden;
+  top: -20px;
+  position: relative;
 }
 
 .about .col_about_left .box_about {
   border: 5px solid #6e50f0;
-  width: 560px;
-  height: 540px;
+  width: 40vw;
+  height: 40vw;
   position: absolute;
-  top: -60px;
-  left: -60px;
+  top: -16%;
+  left: -12%;
   z-index: 1;
 }
 
@@ -518,7 +524,7 @@ img {
 
 .about .col_about_left .text_container .box_text {
   position: absolute;
-  bottom: -120px;
+  bottom: -100px;
   left: 16px;
 }
 
@@ -593,6 +599,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
   .header {
     padding: 1.25rem 0 1rem 0;
@@ -601,11 +608,28 @@ body.side-menu-visible #side-menu .nav-link:hover {
     max-width: 90%;
     margin: 0 auto;
   }
-  .top, .bottom {
+  .top,
+  .bottom {
     text-align: center;
   }
   .hero .container_box {
     margin-left: 0;
+  }
+  .about .col_about_left {
+    position: relative;
+    top: 5px;
+  }
+  .about .col_about_left .img_about {
+    text-align: center;
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .about .col_about_left .box_about {
+    border-radius: 15px;
+    width: 62%;
+    height: 100%;
+    top: -12%;
+    left: 24%;
   }
 }
 
@@ -770,12 +794,12 @@ body.side-menu-visible #side-menu .nav-link:hover {
     width: 60vw;
   }
   .about .col_about_left .box_about {
-    border: 3px solid #6e50f0;
     width: 60vw;
     height: 60vw;
     top: -35px;
-    left: 40%;
+    left: 42%;
     transform: translateX(-50%);
+    border-radius: 15px;
   }
   .about .col_about_left .text_container .box_text .xxxl {
     font-size: 15rem;
