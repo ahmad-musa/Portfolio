@@ -73,15 +73,12 @@
         margin: 0 auto;
     }
 
-    .row_sided {
-        position: absolute;
-        top: 90px;
-        left: 50%;
-        transform: translateX(-50%);
+    body {
 
-        ul {
-            display: flex;
-            transform: rotate(0deg);
+        .row_sided {
+
+            @include social_links;
+
         }
     }
 
@@ -151,33 +148,34 @@
 
         .col_about_left {
 
-            position: relative;
-            top: -10px;
-            display: flex;
-            justify-content: center;
+            @include img_box;
+            // position: relative;
+            // top: -10px;
+            // display: flex;
+            // justify-content: center;
 
-            .img_about {
-                width: 60vw;
-            }
+            // .img_about {
+            //     width: 60vw;
+            // }
 
-            .box_about {
-                width: 60vw;
-                height: 60vw;
-                top: -35px;
-                left: 42%;
-                transform: translateX(-50%);
-                border-radius: 15px;
-            }
+            // .box_about {
+            //     width: 60vw;
+            //     height: 60vw;
+            //     top: -35px;
+            //     left: 42%;
+            //     transform: translateX(-50%);
+            //     border-radius: 15px;
+            // }
 
-            .text_container {
+            // .text_container {
 
-                .box_text {
+            //     .box_text {
 
-                    .xxxl {
-                        font-size: 15rem;
-                    }
-                }
-            }
+            //         .xxxl {
+            //             font-size: 15rem;
+            //         }
+            //     }
+            // }
 
         }
 
@@ -275,22 +273,7 @@
     body {
 
         .row_sided {
-            position: fixed;
-            bottom: 80px;
-            left: 0;
-            transform: none;
-
-            ul {
-                display: flex;
-                flex-direction: column;
-                transform: rotate(0deg);
-
-                a {
-                    span {
-                        display: none;
-                    }
-                }
-            }
+            @include social_links;
         }
 
 
@@ -307,10 +290,35 @@
                     letter-spacing: 3px;
                 }
             }
+
+            .top,
+            .bottom {
+                text-align: center;
+            }
         }
 
         .hero {
             @include box_like;
+        }
+
+        .about {
+
+            .col_about_left {
+
+                @include img_box;
+
+                .text_container {
+
+                    .box_text {
+                        bottom: -50px;
+                        left: 27px;
+
+                        .xxxl {
+                            font-size: 10rem;
+                        }
+                    }
+                }
+            }
         }
 
     }

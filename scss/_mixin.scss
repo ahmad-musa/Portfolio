@@ -1,5 +1,28 @@
+// SOCIAL LINKS
+
+@mixin social_links {
+    position: fixed;
+    bottom: 80px;
+    left: -5px;
+    transform: none;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        transform: rotate(0deg);
+
+        a {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+// HERO SECTION
+
 @mixin box_like {
-    
+
     .container_box {
         margin-left: 2%;
 
@@ -112,4 +135,38 @@
         }
 
     }
+}
+
+// ABOUT SECTION
+
+@mixin img_box {
+
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+
+    .img_about {
+        width: 60vw;
+    }
+
+    .box_about {
+        width: 60vw;
+        height: 60vw;
+        top: -35px;
+        left: 42%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+    }
+
+    .text_container {
+
+        .box_text {
+
+            .xxxl {
+                font-size: 15rem;
+            }
+        }
+    }
+
 }
