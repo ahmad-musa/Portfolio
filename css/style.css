@@ -887,6 +887,9 @@ body.side-menu-visible #side-menu .nav-link:hover {
   body .home .bottom {
     text-align: center;
   }
+  body .home .mouse_click {
+    display: none;
+  }
   body .hero .container_box {
     margin-left: 2%;
   }
