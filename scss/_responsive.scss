@@ -92,7 +92,7 @@
 
             .xl {
                 padding: $s1;
-                font-size: $s6;
+                font-size: $fs_xxl;
                 letter-spacing: 5px;
                 display: flex;
                 justify-content: center;
@@ -276,6 +276,19 @@
 
         .hero {
             @include box_like;
+
+            padding-top: 5rem;
+
+            .top{
+
+                .subhead {
+                font-size: 1.5rem;
+                }
+
+                .xl {                    
+                    font-size: 2rem;
+                }
+            }
         }
 
         .about {

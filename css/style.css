@@ -193,7 +193,7 @@ body .row_sided ul a:hover span {
 /* Header Section Starts */
 .header {
   overflow-x: hidden;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 .header .navbar-nav {
@@ -205,7 +205,6 @@ body .row_sided ul a:hover span {
 .header .nav_container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
 }
 
 .header .nav_container a img {
@@ -246,6 +245,10 @@ body .row_sided ul a:hover span {
 }
 
 /* Header Section Ends */
+.hero {
+  padding-top: 8rem;
+}
+
 .hero .top {
   font-family: "Poppins", sans-serif;
   padding: 0.8rem;
@@ -260,7 +263,7 @@ body .row_sided ul a:hover span {
 
 .hero .top .xl {
   padding: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-family: "Poppins Bold", sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -678,7 +681,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   .hero .top .xl {
     padding: 0.4rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
@@ -890,6 +893,9 @@ body.side-menu-visible #side-menu .nav-link:hover {
   body .home .mouse_click {
     display: none;
   }
+  body .hero {
+    padding-top: 5rem;
+  }
   body .hero .container_box {
     margin-left: 2%;
   }
@@ -964,6 +970,12 @@ body.side-menu-visible #side-menu .nav-link:hover {
   body .hero .container_box .container_4 .mini_box .box_inside .box_inside2 i {
     color: #ef5c6e;
     font-size: 1.75rem;
+  }
+  body .hero .top .subhead {
+    font-size: 1.5rem;
+  }
+  body .hero .top .xl {
+    font-size: 2rem;
   }
   body .about .col_about_left {
     position: relative;
