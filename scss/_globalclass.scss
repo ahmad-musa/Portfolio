@@ -45,17 +45,30 @@ img{
 .subhead{
     font-weight: 600;
     font-family: $font1;
-    font-size: $fs_l;
+    font-size: $fs_lm;
 }
 
 
 .head{
-    font-weight: 600;
+    font-weight: 800;
     font-family: $font1_medium;
     font-size: $fs_xl;
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 1.25;
     padding: $s2 0;
+}
+
+.l{
+    font-size: $fs_xl;
+    padding: $s05 0 0 0;
+}
+
+.xl {
+    padding: $s3 0;
+    font-size: $fs_xxxxl;
+    font-family: $font1_bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
 }
 
 .text{

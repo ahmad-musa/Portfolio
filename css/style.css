@@ -69,16 +69,29 @@ img {
 .subhead {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .head {
-  font-weight: 600;
+  font-weight: 800;
   font-family: "Poppins Medium", sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
-  line-height: 1.5;
+  line-height: 1.25;
   padding: 0.8rem 0;
+}
+
+.l {
+  font-size: 2rem;
+  padding: 0.5rem 0 0 0;
+}
+
+.xl {
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-family: "Poppins Bold", sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 .text {
@@ -252,21 +265,6 @@ body .row_sided ul a:hover span {
 .hero .top {
   font-family: "Poppins", sans-serif;
   padding: 0.8rem;
-}
-
-.hero .top .subhead {
-  font-size: 1.75rem;
-  font-family: "Poppins Medium", sans-serif;
-  font-weight: 600;
-  padding: 0.8rem 0;
-}
-
-.hero .top .xl {
-  padding: 1rem 0;
-  font-size: 2.75rem;
-  font-family: "Poppins Bold", sans-serif;
-  letter-spacing: 10px;
-  text-transform: uppercase;
 }
 
 .hero .bottom .btn_common {
@@ -653,6 +651,9 @@ body.side-menu-visible #side-menu .nav-link:hover {
     padding: 0.5rem 0;
   }
   .subhead {
+    font-size: 1.35rem;
+  }
+  .l {
     font-size: 1.5rem;
   }
   .container {
@@ -864,6 +865,12 @@ body.side-menu-visible #side-menu .nav-link:hover {
     width: 100%;
     flex: 0 0 calc(8.333333333333334*12%);
   }
+  .subhead {
+    font-size: 1.25rem;
+  }
+  .l {
+    font-size: 1.75rem;
+  }
   body .row_sided {
     position: fixed;
     bottom: 80px;
@@ -879,12 +886,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: none;
   }
   body .home .header {
-    padding: 1rem 0.5rem;
-  }
-  body .home .top .xl {
-    padding: 0.4rem;
-    font-size: 2rem;
-    letter-spacing: 3px;
+    padding: 1rem 0.25rem;
   }
   body .home .top,
   body .home .bottom {
@@ -971,11 +973,10 @@ body.side-menu-visible #side-menu .nav-link:hover {
     color: #ef5c6e;
     font-size: 1.75rem;
   }
-  body .hero .top .subhead {
-    font-size: 1.5rem;
-  }
   body .hero .top .xl {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    padding: 1rem 0;
+    letter-spacing: 3px;
   }
   body .about .col_about_left {
     position: relative;
@@ -1003,5 +1004,11 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   body .about .col_about_left .text_container .box_text .xxxl {
     font-size: 10rem;
+  }
+  body .about .col_about_right {
+    text-align: center;
+  }
+  body .about .col_about_right .top {
+    padding: 0.25rem;
   }
 }

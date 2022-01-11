@@ -12,7 +12,7 @@ $(document).ready(function(){
                 "background-color": "#beb0fc",
                 "transition": "all linear .5s",
                 "width":"100%",
-                "padding": "0.5rem 1rem",
+                "padding": "0.25rem 1rem",
                 });
         } else {
             $(".fixed-top").css({
