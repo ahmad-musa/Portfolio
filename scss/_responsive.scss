@@ -294,13 +294,10 @@
         .hero {
             @include box_like;
 
-            padding: 5rem 0;
+            padding: 5rem 0 2rem 0;
 
             .top {
 
-                // .subhead {
-                // font-size: 1.35rem;
-                // }
 
                 .xl {
                     font-size: $fs_xl2;
@@ -311,6 +308,10 @@
         }
 
         .about {
+
+            .pad_y {
+                padding: 1rem 0 0 0;
+            }
 
             .col_about_left {
 
@@ -341,6 +342,10 @@
 
 
         .portfolio {
+
+            .container_section {
+                padding: 1.6rem 0 0 0;
+            }
 
             .owl-carousel {
 

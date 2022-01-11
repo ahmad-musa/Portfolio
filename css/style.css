@@ -945,7 +945,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: none;
   }
   body .hero {
-    padding: 5rem 0;
+    padding: 5rem 0 2rem 0;
   }
   body .hero .container_box {
     margin-left: 2%;
@@ -1027,6 +1027,9 @@ body.side-menu-visible #side-menu .nav-link:hover {
     padding: 1rem 0;
     letter-spacing: 3px;
   }
+  body .about .pad_y {
+    padding: 1rem 0 0 0;
+  }
   body .about .col_about_left {
     position: relative;
     top: -10px;
@@ -1059,6 +1062,9 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   body .about .col_about_right .top {
     padding: 0.25rem;
+  }
+  body .portfolio .container_section {
+    padding: 1.6rem 0 0 0;
   }
   body .portfolio .owl-carousel .owl-item {
     display: flex;
