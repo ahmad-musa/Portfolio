@@ -10,7 +10,7 @@ img{
     background: rgb(107, 107, 107);
     background: url(../image/bg1.jpg);
     background-size: cover;
-    min-height: 100vh;
+    // min-height: 100vh;
     position: relative;
 }
 
@@ -20,7 +20,7 @@ img{
 }
 
 .container_section{
-    padding: 4rem 0 2rem 0;
+    padding: $s4 0;
 }
 
 .relative_box{
@@ -31,7 +31,6 @@ img{
     display: flex;
     justify-content: center;
 }
-
 
 .colored {
     color: $color2;
@@ -61,6 +60,7 @@ img{
 .l{
     font-size: $fs_xl;
     padding: $s05 0 0 0;
+    line-height: 1.5;
 }
 
 .xl {
@@ -73,6 +73,10 @@ img{
 
 .text{
     text-align: justify;
+}
+
+.pad_y{
+    padding: 2rem 0;
 }
 
 .signature{

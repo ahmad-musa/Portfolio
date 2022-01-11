@@ -7,8 +7,10 @@
 // Hero Section Starts
 
 .hero {
-    // position: relative;
-    padding-top: 8rem;
+    position: relative;
+    padding: 9rem 0;
+    bottom: 0;
+    // max-height: 100vh;
 
     .top {
 
@@ -309,7 +311,6 @@
 
 .about {
     position: relative;
-    min-height: 90vh;
 
     .col_about_left {
         // background: rgb(70, 70, 70);
@@ -369,6 +370,11 @@
 
         .top {
             padding: $s4;
+
+            .text{
+                padding: 1rem 0;
+                line-height: 1.5;
+            }
         }
 
         .bottom {
@@ -389,24 +395,26 @@
 
 .portfolio {
 
+    .top{
+        
+    }
+
 
     .owl-carousel {
-
 
         .owl-item {
 
             .box {
-                min-width: 200px;
-                min-height: 220px;
-                border-radius: 15px;
+                min-width: 275px;
+                min-height: 350px;
+                border-radius: 10px;
                 background-color: rgba(255, 118, 5, 0.808);
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
+                @include centered;
 
-                &:hover{
+
+                &:hover {
 
                     img {
                         transform: scale(1.2);
@@ -418,17 +426,44 @@
                 width: 75%;
             }
 
-            &:nth-child(odd) .box{
+            &:nth-child(odd) .box {
                 background-color: rgba(0, 245, 253, 0.808);
                 margin-top: 50px;
             }
 
         }
 
+
+        .owl-dots {
+
+            padding: 0.5rem 0;
+
+            .owl-dot {
+
+                &.active {
+
+                    span {
+                        background: $color2;
+                        outline: 2px solid $color1;
+                        outline-offset: 5px;
+                    }
+                }
+
+                &:hover {
+
+                    span {
+                        background: $color2;
+                    }
+                }
+            }
+        }
+
     }
 
-}
 
+        
+
+}
 
 
     // Portfolio Section Ends

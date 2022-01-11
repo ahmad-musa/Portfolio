@@ -19,6 +19,14 @@
     }
 }
 
+// GLOBAL
+
+@mixin centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // HERO SECTION
 
 @mixin box_like {

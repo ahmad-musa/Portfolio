@@ -35,7 +35,6 @@ img {
   background: #6b6b6b;
   background: url(../image/bg1.jpg);
   background-size: cover;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -45,7 +44,7 @@ img {
 }
 
 .container_section {
-  padding: 4rem 0 2rem 0;
+  padding: 1.6rem 0;
 }
 
 .relative_box {
@@ -84,6 +83,7 @@ img {
 .l {
   font-size: 2rem;
   padding: 0.5rem 0 0 0;
+  line-height: 1.5;
 }
 
 .xl {
@@ -96,6 +96,10 @@ img {
 
 .text {
   text-align: justify;
+}
+
+.pad_y {
+  padding: 2rem 0;
 }
 
 .signature {
@@ -259,7 +263,9 @@ body .row_sided ul a:hover span {
 
 /* Header Section Ends */
 .hero {
-  padding-top: 8rem;
+  position: relative;
+  padding: 9rem 0;
+  bottom: 0;
 }
 
 .hero .top {
@@ -492,7 +498,6 @@ body .row_sided ul a:hover span {
 
 .about {
   position: relative;
-  min-height: 90vh;
 }
 
 .about .col_about_left {
@@ -547,20 +552,25 @@ body .row_sided ul a:hover span {
   padding: 1.6rem;
 }
 
+.about .col_about_right .top .text {
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
 .about .col_about_right .bottom {
   padding: 0.4rem 1.6rem;
   font-weight: 600;
 }
 
 .portfolio .owl-carousel .owl-item .box {
-  min-width: 200px;
-  min-height: 220px;
-  border-radius: 15px;
+  min-width: 275px;
+  min-height: 350px;
+  border-radius: 10px;
   background-color: rgba(255, 118, 5, 0.808);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio .owl-carousel .owl-item .box:hover img {
@@ -574,6 +584,20 @@ body .row_sided ul a:hover span {
 .portfolio .owl-carousel .owl-item:nth-child(odd) .box {
   background-color: rgba(0, 245, 253, 0.808);
   margin-top: 50px;
+}
+
+.portfolio .owl-carousel .owl-dots {
+  padding: 0.5rem 0;
+}
+
+.portfolio .owl-carousel .owl-dots .owl-dot.active span {
+  background: #6e50f0;
+  outline: 2px solid #ef5c6e;
+  outline-offset: 5px;
+}
+
+.portfolio .owl-carousel .owl-dots .owl-dot:hover span {
+  background: #6e50f0;
 }
 
 .footer .credit {
@@ -639,6 +663,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
   .top,
   .bottom {
     text-align: center;
+    padding-bottom: 1.5rem;
   }
   .hero .container_box {
     margin-left: 0;
@@ -699,7 +724,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: none;
   }
   .hero {
-    padding-bottom: 1rem;
+    padding: 5rem 0;
   }
   .hero .top {
     padding: 0 0.4rem;
@@ -920,7 +945,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: none;
   }
   body .hero {
-    padding-top: 5rem;
+    padding: 5rem 0;
   }
   body .hero .container_box {
     margin-left: 2%;
@@ -1034,5 +1059,31 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   body .about .col_about_right .top {
     padding: 0.25rem;
+  }
+  body .portfolio .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .portfolio .owl-carousel .owl-item .box {
+    min-width: 200px;
+    min-height: 250px;
+  }
+  body .portfolio .owl-carousel .owl-item .box:hover img {
+    transform: scale(1.2);
+  }
+  body .portfolio .owl-carousel .owl-item img {
+    width: 50%;
+  }
+  body .portfolio .owl-carousel .owl-item:nth-child(odd) .box {
+    margin-top: 0;
+  }
+  body .portfolio .owl-carousel .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .portfolio .owl-carousel .owl-stage .active.center {
+    padding: 1rem 1.5rem;
   }
 }

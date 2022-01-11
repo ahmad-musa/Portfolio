@@ -45,10 +45,11 @@ $(document).ready(function () {
     owl.owlCarousel({
         loop: true,
         margin: 20,
-        items: 5,
+        items: 4,
         autoplay: true,
         autoplayTimeout: 1500,
         autoplayHoverPause: true,
+        center: true,
         responsiveClass: true,
 
         responsive: {
@@ -56,12 +57,17 @@ $(document).ready(function () {
                 items: 1,
                 nav: true
             },
-            600: {
-                items: 3,
+            500: {
+                items: 2,
                 nav: true
             },
+            800: {
+                items: 3,
+                nav: true,
+                loop: true
+            },
             1000: {
-                items: 5,
+                items: 4,
                 nav: true,
                 loop: true
             }

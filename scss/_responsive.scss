@@ -12,6 +12,7 @@
     .top,
     .bottom {
         text-align: center;
+        padding-bottom: 1.5rem;
     }
 
     .hero {
@@ -68,7 +69,7 @@
         font-size: 1.35rem;
     }
 
-    
+
     .l {
         font-size: $fs_lm;
     }
@@ -90,7 +91,7 @@
 
     .hero {
 
-        padding-bottom: 1rem;
+        padding: 5rem 0;
 
         .top {
             padding: 0 $s1;
@@ -285,7 +286,7 @@
                 text-align: center;
             }
 
-            .mouse_click{
+            .mouse_click {
                 display: none;
             }
         }
@@ -293,15 +294,15 @@
         .hero {
             @include box_like;
 
-            padding-top: 5rem;
+            padding: 5rem 0;
 
-            .top{
+            .top {
 
                 // .subhead {
                 // font-size: 1.35rem;
                 // }
 
-                .xl {                    
+                .xl {
                     font-size: $fs_xl2;
                     padding: 1rem 0;
                     letter-spacing: 3px;
@@ -330,11 +331,57 @@
 
             .col_about_right {
                 text-align: center;
-    
+
                 .top {
                     padding: 0.25rem;
                 }
             }
+        }
+
+
+
+        .portfolio {
+
+            .owl-carousel {
+
+                .owl-item {
+
+                    @include centered;
+
+                    .box {
+                        min-width: 200px;
+                        min-height: 250px;
+
+                        &:hover {
+
+                            img {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 50%;
+                    }
+
+                    &:nth-child(odd) .box {
+                        margin-top: 0;
+                    }
+
+                }
+
+                .owl-stage {
+
+                    @include centered;
+
+                    .active.center{
+                        padding: 1rem 1.5rem;
+                    }
+                }
+
+
+            }
+
         }
 
     }
