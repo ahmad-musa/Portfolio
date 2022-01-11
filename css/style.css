@@ -80,6 +80,12 @@ img {
   padding: 0.8rem 0;
 }
 
+.m {
+  font-size: 1.5rem;
+  padding: 0 0 0.8rem 0;
+  line-height: 1.5;
+}
+
 .l {
   font-size: 2rem;
   padding: 0.5rem 0 0 0;
@@ -598,6 +604,107 @@ body .row_sided ul a:hover span {
 
 .portfolio .owl-carousel .owl-dots .owl-dot:hover span {
   background: #6e50f0;
+}
+
+.service {
+  padding: 3.5rem 0;
+}
+
+.service .bottom {
+  padding: 2rem 0;
+}
+
+.service .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service .box {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service .box:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service .box:hover .left .left_box::before {
+  background: #fcd985;
+}
+
+.service .box:hover .left .left_box::after {
+  background: #f2f5fa;
+}
+
+.service .box:hover .left .left_box i {
+  color: #6e50f0;
+}
+
+.service .box .left {
+  padding: 1.6rem;
+}
+
+.service .box .left .left_box {
+  position: relative;
+}
+
+.service .box .left .left_box::before {
+  width: 40px;
+  height: 40px;
+  background: #f2f5fa;
+  z-index: -100;
+}
+
+.service .box .left .left_box::after {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fcd985;
+  bottom: -20px;
+  right: -20px;
+  z-index: -100;
+}
+
+.service .box .left .left_box i {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-size: 3rem;
+  color: #ef5c6e;
+}
+
+.service .box .right {
+  padding: 1.6rem;
+}
+
+.service .box .right .text {
+  line-height: 1.35;
+  padding-right: 1.6rem;
+}
+
+.service .box .right .btn_common {
+  margin: 0 0 0 -1rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  font-weight: 600;
+}
+
+.service .box .right .tinybar {
+  outline: 1px solid #fff;
+}
+
+.service .box .right .tinybar::before {
+  height: 3px;
+  right: -10px;
+  top: 1.2rem;
+}
+
+.service .box .right .tinybar:hover::before {
+  height: 4px;
+  right: -16px;
 }
 
 .footer .credit {

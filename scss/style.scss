@@ -371,7 +371,7 @@
         .top {
             padding: $s4;
 
-            .text{
+            .text {
                 padding: 1rem 0;
                 line-height: 1.5;
             }
@@ -395,9 +395,7 @@
 
 .portfolio {
 
-    .top{
-        
-    }
+    .top {}
 
 
     .owl-carousel {
@@ -461,14 +459,134 @@
     }
 
 
-        
+
 
 }
 
 
-    // Portfolio Section Ends
+// Portfolio Section Ends
 
 
-    @import 'footer';
-    @import 'sidenav';
-    @import 'responsive';
+// Service Section Starts
+
+.service {
+
+    padding: $s6 0;
+
+    .bottom{
+        padding: $s5 0;
+    }
+
+    .row{
+        @include centered;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: $s3;
+        margin: $s2;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+
+            .left {
+
+                .left_box {
+
+                    &::before {
+                        background: #fcd985;
+                        
+                    }
+    
+                    &::after {
+                        background: #f2f5fa;
+                    }
+
+                    i {
+                        color: $color2;
+                    }
+                }
+            }
+
+        }
+
+        .left {
+            padding: $s4;
+
+            .left_box {
+
+                position: relative;
+
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                    background: #f2f5fa;
+                    z-index: -100;
+                }
+
+                &::after {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: #fcd985;
+                    bottom: -20px;
+                    right: -20px;
+                    z-index: -100;
+                }
+
+                i {
+                    position: relative;
+                    top: 15px;
+                    left: 15px;
+                    font-size: $fs_xxxxl;
+                    color: $color1;
+                }
+            }
+        }
+
+        .right {
+            padding: $s4;
+
+            .text {
+                line-height: 1.35;
+                padding-right: $s4;
+            }
+
+            .btn_common {
+                margin: 0 0 0 -1rem;
+                padding: 0.4rem 1rem 0.4rem 1rem;
+                font-weight: 600;
+            }
+
+            .tinybar {
+                outline: 1px solid $white;
+
+                &::before {
+                    height: 3px;
+                    right: -10px;
+                    top: 1.2rem;
+                }
+
+                &:hover::before {
+                    height: 4px;
+                    right: -16px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+
+
+// Service Section Ends
+
+
+@import 'footer';
+@import 'sidenav';
+@import 'responsive';
