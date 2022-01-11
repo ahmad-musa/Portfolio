@@ -810,7 +810,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
 /* // X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
   .container {
-    max-width: 90%;
+    max-width: 86%;
     margin: 0 auto;
   }
   .col-xs-1 {
