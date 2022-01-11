@@ -33,6 +33,12 @@
 }
 
 
+/* BETTER NAV CLEARING FORMAT */
+
+.navbar-toggler {
+    padding-right: 0;
+}
+
 
 
 /* // X-Small devices (portrait phones, less than 576px) */

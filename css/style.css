@@ -644,7 +644,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     padding: 1rem 0;
   }
   .header {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
   .head {
     font-size: 1.75rem;
@@ -809,7 +809,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
 /* // X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
   .container {
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
   }
   .col-xs-1 {
@@ -879,7 +879,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: none;
   }
   body .home .header {
-    padding: 0 1rem;
+    padding: 1rem 0.5rem;
   }
   body .home .top .xl {
     padding: 0.4rem;

@@ -54,7 +54,7 @@
     }
 
     .header {
-        padding: $s3;
+        padding: $s3 $s05;
     }
 
     .head {
@@ -171,7 +171,7 @@
 @media screen and (max-width: 575.98px) {
 
     .container {
-        width: 90%;
+        max-width: 90%;
         // border: 1px solid red;
         margin: 0 auto;
     }
@@ -253,7 +253,7 @@
         .home {
 
             .header {
-                padding: 0 1rem;
+                padding: 1rem 0.5rem;
             }
 
             .top {
