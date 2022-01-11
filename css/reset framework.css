@@ -41,6 +41,15 @@
 
 
 
+/* OWL CAROUSEL CLEARING FORMAT */
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev {
+    display: none;
+}
+
+
+
 /* // X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
 
