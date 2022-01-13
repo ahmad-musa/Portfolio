@@ -44,6 +44,16 @@
         }
     }
 
+    .service {
+
+        .box {
+            
+            @include centered;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
 
 }
 
@@ -109,11 +119,7 @@
             text-align: center;
         }
 
-
-
         @include box_like;
-
-
 
         .mouse_click {
 
@@ -166,6 +172,16 @@
             }
         }
 
+    }
+
+    .service {
+
+        .box {
+            
+            @include centered;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
 
@@ -291,6 +307,7 @@
             }
         }
 
+
         .hero {
             @include box_like;
 
@@ -306,6 +323,7 @@
                 }
             }
         }
+
 
         .about {
 
@@ -338,7 +356,6 @@
                 }
             }
         }
-
 
 
         .portfolio {
@@ -379,7 +396,7 @@
 
                     @include centered;
 
-                    .active.center{
+                    .active.center {
                         padding: 1rem 1.5rem;
                     }
                 }
@@ -387,6 +404,17 @@
 
             }
 
+        }
+
+
+        .service {
+
+            .box {
+                
+                @include centered;
+                flex-direction: column;
+                text-align: center;
+            }
         }
 
     }

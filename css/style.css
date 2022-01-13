@@ -678,12 +678,11 @@ body .row_sided ul a:hover span {
 }
 
 .service .box .right {
-  padding: 1.6rem;
+  padding: 1.6rem 2rem;
 }
 
 .service .box .right .text {
   line-height: 1.35;
-  padding-right: 1.6rem;
 }
 
 .service .box .right .btn_common {
@@ -790,6 +789,13 @@ body.side-menu-visible #side-menu .nav-link:hover {
     height: 100%;
     top: -12%;
     left: 24%;
+  }
+  .service .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -960,6 +966,13 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   .about .col_about_right .top {
     padding: 0.25rem;
+  }
+  .service .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1198,5 +1211,12 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   body .portfolio .owl-carousel .owl-stage .active.center {
     padding: 1rem 1.5rem;
+  }
+  body .service .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
