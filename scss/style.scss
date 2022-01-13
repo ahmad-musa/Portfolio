@@ -491,6 +491,7 @@
 
         &:hover {
             box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+            margin-top: 1px;
 
             .left {
 
@@ -548,7 +549,7 @@
         }
 
         .right {
-            padding: $s4 $s5;
+            padding: $s4;
 
             .text {
                 line-height: 1.35;

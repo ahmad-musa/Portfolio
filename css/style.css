@@ -630,6 +630,7 @@ body .row_sided ul a:hover span {
 
 .service .box:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 1px;
 }
 
 .service .box:hover .left .left_box::before {
@@ -678,7 +679,7 @@ body .row_sided ul a:hover span {
 }
 
 .service .box .right {
-  padding: 1.6rem 2rem;
+  padding: 1.6rem;
 }
 
 .service .box .right .text {
