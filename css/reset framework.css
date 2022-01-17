@@ -49,6 +49,25 @@
 
 
 
+/* Progress Bar */
+
+.ab-progress .ab-progress-bar {
+    height: 8px;
+    background: linear-gradient(to left, red, purple);
+    border-radius: 8px;
+}
+
+.ab-progress .progress-bar-wrap {
+    height: 8px;
+    border-radius: 8px;
+}
+
+.ab-progress .percent {
+    color: white;
+}
+
+
+
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
