@@ -77,3 +77,23 @@ $(document).ready(function () {
 });
 
 
+// Progress Bar
+
+$(function() {
+
+    $(".example").progressBar({
+
+        // tooltip
+        tooltip:true,
+
+        // shows title
+        showTitle: true,
+
+        // Animation duration
+        duration: 1000,
+        
+    }),
+    console.log("Progress Bar");
+
+
+});
