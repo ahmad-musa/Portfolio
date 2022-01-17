@@ -1,12 +1,12 @@
-body{
+body {
     font-family: $font1;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.home{
+.home {
     background: rgb(107, 107, 107);
     background: url(../image/bg1.jpg);
     background-size: cover;
@@ -14,20 +14,20 @@ img{
     position: relative;
 }
 
-.container{
+.container {
     max-width: 80%;
     margin: 0 auto;
 }
 
-.container_section{
+.container_section {
     padding: $s4 0;
 }
 
-.relative_box{
+.relative_box {
     position: relative;
 }
 
-.centered{
+.centered {
     display: flex;
     justify-content: center;
 }
@@ -41,14 +41,14 @@ img{
     padding: $s2 0;
 }
 
-.subhead{
+.subhead {
     font-weight: 600;
     font-family: $font1;
     font-size: $fs_lm;
 }
 
 
-.head{
+.head {
     font-weight: 800;
     font-family: $font1_medium;
     font-size: $fs_xl;
@@ -57,13 +57,13 @@ img{
     padding: $s2 0;
 }
 
-.m{
+.m {
     font-size: $fs_lm;
     padding: 0 0 $s2 0;
     line-height: 1.5;
 }
 
-.l{
+.l {
     font-size: $fs_xl;
     padding: $s05 0 0 0;
     line-height: 1.5;
@@ -77,15 +77,15 @@ img{
     text-transform: uppercase;
 }
 
-.text{
+.text {
     text-align: justify;
 }
 
-.pad_y{
+.pad_y {
     padding: 2rem 0;
 }
 
-.signature{
+.signature {
     font-size: $fs_l;
     font-family: $font2;
     color: $color1;
@@ -152,6 +152,25 @@ img{
     &:hover::before {
         right: -17px;
         height: 4px;
+    }
+}
+
+// Progress Bar
+.ab-progress {
+
+    .ab-progress-bar {
+        height: 8px;
+        background: linear-gradient(to left, $color2, $color1);
+        border-radius: 8px;
+    }
+
+    .progress-bar-wrap {
+        height: 8px;
+        border-radius: 8px;
+    }
+
+    .percent{
+        color: $white;
     }
 }
 

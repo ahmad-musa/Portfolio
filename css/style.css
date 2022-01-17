@@ -172,6 +172,21 @@ img {
   height: 4px;
 }
 
+.ab-progress .ab-progress-bar {
+  height: 8px;
+  background: linear-gradient(to left, #6e50f0, #ef5c6e);
+  border-radius: 8px;
+}
+
+.ab-progress .progress-bar-wrap {
+  height: 8px;
+  border-radius: 8px;
+}
+
+.ab-progress .percent {
+  color: #fff;
+}
+
 body {
   position: relative;
 }

@@ -299,9 +299,6 @@
 
 
 
-
-
-
 // Hero Section Ends
 
 
@@ -473,11 +470,11 @@
 
     padding: $s6 0;
 
-    .bottom{
+    .bottom {
         padding: $s5 0;
     }
 
-    .row{
+    .row {
         @include centered;
     }
 
@@ -499,9 +496,9 @@
 
                     &::before {
                         background: #fcd985;
-                        
+
                     }
-    
+
                     &::after {
                         background: #f2f5fa;
                     }
@@ -583,8 +580,8 @@
 }
 
 
-
 // Service Section Ends
+
 
 
 @import 'footer';
