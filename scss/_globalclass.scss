@@ -156,17 +156,11 @@ img {
 }
 
 // Progress Bar
+
 .ab-progress {
 
     .ab-progress-bar {
-        height: 8px;
         background: linear-gradient(to left, $color2, $color1);
-        border-radius: 8px;
-    }
-
-    .progress-bar-wrap {
-        height: 8px;
-        border-radius: 8px;
     }
 
     .percent{
