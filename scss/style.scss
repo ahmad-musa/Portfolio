@@ -661,6 +661,18 @@
 
 
 
+// Speciality Section Starts
+.speciality{
+    
+    .bottom{
+
+        @include box_serve;
+    }
+}
+
+// Speciality Section Ends
+
+
 @import 'footer';
 @import 'sidenav';
 @import 'responsive';

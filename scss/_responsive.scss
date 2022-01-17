@@ -47,7 +47,7 @@
     .service {
 
         .box {
-            
+
             @include centered;
             flex-direction: column;
             text-align: center;
@@ -177,7 +177,7 @@
     .service {
 
         .box {
-            
+
             @include centered;
             flex-direction: column;
             text-align: center;
@@ -410,7 +410,32 @@
         .service {
 
             .box {
-                
+
+                @include centered;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .skill {
+
+            .col_about_left {
+
+                .box_text {
+                    
+                    .xxxl {
+
+                        font-size: 70px;
+                        letter-spacing: -4px;
+                        }
+                }
+            }
+        }
+
+        .speciality {
+
+            .box {
+
                 @include centered;
                 flex-direction: column;
                 text-align: center;

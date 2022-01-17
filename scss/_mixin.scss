@@ -178,3 +178,53 @@
     }
 
 }
+
+// SERVICE SECTION
+
+@mixin box_serve{
+    .box {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: $s2;
+
+        &:hover {
+            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+
+            .left {
+
+                .left_box {
+
+                    i {
+                        color: $color2;
+                    }
+                }
+            }
+
+        }
+
+        .left {
+            padding: $s2;
+
+            .left_box {
+
+                position: relative;
+
+                i {
+                    position: relative;
+                    font-size: $fs_xxl;
+                    color: $color1;
+                }
+            }
+        }
+
+        .right {
+            padding: $s2;
+
+            .text {
+                line-height: 1.35;
+            }
+
+        }
+
+    }
+}

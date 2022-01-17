@@ -788,6 +788,42 @@ body .row_sided ul a:hover span {
   -webkit-text-stroke: 1px black;
 }
 
+.speciality .bottom .box {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.8rem;
+}
+
+.speciality .bottom .box:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.speciality .bottom .box:hover .left .left_box i {
+  color: #6e50f0;
+}
+
+.speciality .bottom .box .left {
+  padding: 0.8rem;
+}
+
+.speciality .bottom .box .left .left_box {
+  position: relative;
+}
+
+.speciality .bottom .box .left .left_box i {
+  position: relative;
+  font-size: 2.5rem;
+  color: #ef5c6e;
+}
+
+.speciality .bottom .box .right {
+  padding: 0.8rem;
+}
+
+.speciality .bottom .box .right .text {
+  line-height: 1.35;
+}
+
 .footer .credit {
   text-align: center;
 }
@@ -1295,6 +1331,17 @@ body.side-menu-visible #side-menu .nav-link:hover {
     padding: 1rem 1.5rem;
   }
   body .service .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  body .skill .col_about_left .box_text .xxxl {
+    font-size: 70px;
+    letter-spacing: -4px;
+  }
+  body .speciality .box {
     display: flex;
     justify-content: center;
     align-items: center;
