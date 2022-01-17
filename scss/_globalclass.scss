@@ -79,6 +79,7 @@ img {
 
 .text {
     text-align: justify;
+    line-height: 1.5;
 }
 
 .pad_y {
@@ -165,11 +166,26 @@ img {
     }
 
     .progress-bar-wrap {
-        background: rgb(212, 212, 212);
+        background: rgb(221, 221, 221);
     }
 
     .percent{
-        color: $white;
+        color: $color1;
+    }
+
+    .progress-indicator-inner {
+        background: transparent;
+    }
+
+    .down-arrow {
+        border-top: 7px solid $white;
+    }
+
+    .progress-title {
+        color: $black;
+        font-family: $font1_medium;
+        font-size: $fs_m;
+        font-weight: 800;
     }
 }
 

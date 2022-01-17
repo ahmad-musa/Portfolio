@@ -102,6 +102,7 @@ img {
 
 .text {
   text-align: justify;
+  line-height: 1.5;
 }
 
 .pad_y {
@@ -177,11 +178,26 @@ img {
 }
 
 .ab-progress .progress-bar-wrap {
-  background: #d4d4d4;
+  background: #dddddd;
 }
 
 .ab-progress .percent {
-  color: #fff;
+  color: #ef5c6e;
+}
+
+.ab-progress .progress-indicator-inner {
+  background: transparent;
+}
+
+.ab-progress .down-arrow {
+  border-top: 7px solid #fff;
+}
+
+.ab-progress .progress-title {
+  color: #000;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 body {
