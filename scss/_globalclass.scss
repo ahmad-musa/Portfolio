@@ -164,6 +164,10 @@ img {
         background: linear-gradient(to left, $color2, $color1);
     }
 
+    .progress-bar-wrap {
+        background: rgb(212, 212, 212);
+    }
+
     .percent{
         color: $white;
     }

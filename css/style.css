@@ -176,6 +176,10 @@ img {
   background: linear-gradient(to left, #6e50f0, #ef5c6e);
 }
 
+.ab-progress .progress-bar-wrap {
+  background: #d4d4d4;
+}
+
 .ab-progress .percent {
   color: #fff;
 }
