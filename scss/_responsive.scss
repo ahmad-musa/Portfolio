@@ -54,6 +54,23 @@
         }
     }
 
+    .skill_new {
+
+        .grid {
+            gap: 1rem;
+
+            .grid-col-1 {
+
+                grid-row: 1/2;
+            }
+
+            .grid-col-3 {
+                grid-column: 1/3;
+                padding: 0 5rem;
+            }
+        }
+    }
+
 
 }
 
@@ -194,6 +211,22 @@
         }
     }
 
+    .skill_new {
+
+        .grid {
+            gap: 1rem;
+
+            .grid-col-1 {
+
+                grid-row: 1/2;
+            }
+
+            .grid-col-3 {
+                grid-column: 1/3;
+                padding: 0 5rem;
+            }
+        }
+    }
 
 
 }
@@ -435,9 +468,7 @@
                 @include text_outline;
             }
 
-            .col_about_left {
-
-            }
+            .col_about_left {}
         }
 
         .speciality {
@@ -447,6 +478,51 @@
                 @include centered;
                 flex-direction: column;
                 text-align: center;
+            }
+        }
+
+        .skill_new {
+
+            .grid {
+                gap: 1rem;
+                grid-template-columns: 1fr;
+                justify-items: center;
+
+                .grid-col-1 {
+                    grid-row: 1/1;
+
+                    .col_about_left {
+
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+
+                        .box_about {
+                            
+                        }
+
+                        .img_about {
+                            left: 2%;
+                            top: 2%;
+                        }
+
+                        .img_front {
+                            position: absolute;
+                            width: 22vw;
+                            height: 20vw;
+                            left: 2%;
+                        }
+                    }
+                }
+
+                .grid-col-2 {
+                    // grid-column: 1/3;
+                }
+
+                .grid-col-3 {
+                    grid-column: 1/2;
+                    padding: 0 1rem;
+                }
             }
         }
 
