@@ -4,6 +4,7 @@
 @import 'mixin';
 @import 'header';
 
+
 // Hero Section Starts
 
 .hero {
@@ -394,16 +395,14 @@
 
 .portfolio {
 
-    .top {}
-
 
     .owl-carousel {
 
         .owl-item {
 
             .box {
-                min-width: 275px;
-                min-height: 350px;
+                min-width: 300px;
+                min-height: 380px;
                 border-radius: 10px;
                 background-color: rgba(255, 118, 5, 0.808);
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

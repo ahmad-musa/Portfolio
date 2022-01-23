@@ -430,16 +430,13 @@
 
         .skill {
 
+            .box_text {
+                left: 0;
+                @include text_outline;
+            }
+
             .col_about_left {
 
-                .box_text {
-                    
-                    .xxxl {
-
-                        font-size: 70px;
-                        letter-spacing: -4px;
-                        }
-                }
             }
         }
 

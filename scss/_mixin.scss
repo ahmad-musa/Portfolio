@@ -32,10 +32,16 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
+    
 
     .xxxl {
+
+        // @include clamp('font-size',5rem,2vw,10rem);
+
+        @include clamp('font-size',6rem,12vw,15rem);
+
+
         color: transparent;
-        font-size: 12rem;
         font-weight: 800;
         opacity: .1;
         text-transform: uppercase;
@@ -49,6 +55,14 @@
 
         -webkit-text-stroke: 1px black;
     }
+}
+
+// SPECIAL
+
+@mixin clamp($property, $min-size, $scaler, $max-size){
+      #{$property}:$max-size; 
+      #{$property}:#{"min(max(#{$min-size}, #{$scaler}), #{$max-size})"}; 
+      #{$property}: clamp($min-size, $scaler, $max-size);
 }
 
 
