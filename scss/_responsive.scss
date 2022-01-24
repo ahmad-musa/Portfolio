@@ -468,11 +468,18 @@
 
         .service {
 
+            
+            padding-bottom: 0;
+
             .box {
 
                 @include centered;
                 flex-direction: column;
                 text-align: center;
+            }
+
+            .bottom {
+                padding: 1rem 0;
             }
         }
 

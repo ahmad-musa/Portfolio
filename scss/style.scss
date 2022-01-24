@@ -584,92 +584,8 @@
 
 // Skill Section Starts
 
+
 .skill {
-
-    .row {
-        position: relative;
-    }
-
-    .box_text {
-
-        left: -12%;
-        @include text_outline;
-    }
-
-    .col_about_left {
-
-        position: relative;
-
-        .img_about {
-            background: rgb(148, 148, 148);
-            background: url(../image/img_bg5.jpg) center;
-            background-size: cover;
-            border-radius: 10px;
-            text-align: center;
-            width: 22vw;
-            height: 30vw;
-            top: 0;
-            left: 30%;
-            transform: translateX(-30%);
-            position: absolute;
-
-        }
-
-        .box_about {
-            border: 5px solid $color1;
-            width: 22vw;
-            height: 30vw;
-            position: absolute;
-            top: -50px;
-        }
-
-        .img_front {
-            position: absolute;
-            width: 25vw;
-            height: 30vw;
-            left: 10%;
-            // top: 50%;
-            // transform: translate(-50%, 50%);
-        }
-
-    }
-
-
-}
-
-// Skill Section Ends
-
-
-
-// Speciality Section Starts
-.speciality {
-
-    position: relative;
-
-    .box_text {
-
-        @include text_outline;
-
-        right: 0;
-        top: 110%;
-    }
-
-    .bottom {
-
-        @include box_serve;
-        @include box_left_right;
-    }
-}
-
-// Speciality Section Ends
-
-
-
-
-
-// Skill_new Section Starts
-
-.skill_new {
 
     .row {
         position: relative;
@@ -752,7 +668,34 @@
 
 }
 
-// Skill_new Section Ends
+
+// Skill Section Ends
+
+
+
+// Speciality Section Starts
+.speciality {
+
+    position: relative;
+
+    .box_text {
+
+        @include text_outline;
+
+        right: 0;
+        top: 110%;
+    }
+
+    .bottom {
+
+        @include box_serve;
+        @include box_left_right;
+    }
+}
+
+// Speciality Section Ends
+
+
 
 
 
