@@ -342,26 +342,9 @@
 
         .text_container {
 
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-
-            .box_text {
-
-                position: absolute;
-                bottom: -100px;
-                left: 16px;
-
-                .xxxl {
-                    font-size: 270px;
-                    font-weight: 800;
-                    color: $white;
-                }
-            }
+            @include text_bigline;
         }
+
 
     }
 
@@ -609,9 +592,9 @@
         // justify-items: center;
 
 
-        .grid-col{
+        .grid-col {
 
-            .subhead{
+            .subhead {
                 text-align: center;
             }
         }
@@ -696,6 +679,18 @@
 // Speciality Section Ends
 
 
+// Testimony Section Starts
+
+.testimony{
+
+    .bg_cover{
+        min-height: 80vh;
+        background: $color2;
+    }
+}
+
+
+// Testimony Section Ends
 
 
 

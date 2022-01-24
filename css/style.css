@@ -903,6 +903,11 @@ body .row_sided ul a:hover span {
   line-height: 1.35;
 }
 
+.testimony .bg_cover {
+  min-height: 80vh;
+  background: #6e50f0;
+}
+
 .footer .credit {
   text-align: center;
 }
