@@ -161,6 +161,34 @@ img {
 }
 
 
+// Owl Carousel 
+
+.owl-dots {
+
+    padding: 0.5rem 0;
+
+    .owl-dot {
+
+        &.active {
+
+            span {
+                background: $color2;
+                outline: 2px solid $color1;
+                outline-offset: 5px;
+            }
+        }
+
+        &:hover {
+
+            span {
+                background: $color2;
+            }
+        }
+    }
+}
+
+
+
 // Progress Bar
 
 .ab-progress {

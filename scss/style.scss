@@ -379,7 +379,7 @@
 .portfolio {
 
 
-    .owl-carousel {
+    .owl_portfolio {
 
         .owl-item {
 
@@ -410,31 +410,6 @@
                 margin-top: 50px;
             }
 
-        }
-
-
-        .owl-dots {
-
-            padding: 0.5rem 0;
-
-            .owl-dot {
-
-                &.active {
-
-                    span {
-                        background: $color2;
-                        outline: 2px solid $color1;
-                        outline-offset: 5px;
-                    }
-                }
-
-                &:hover {
-
-                    span {
-                        background: $color2;
-                    }
-                }
-            }
         }
 
     }
@@ -681,12 +656,61 @@
 
 // Testimony Section Starts
 
-.testimony{
+.testimony {
 
-    .bg_cover{
-        min-height: 80vh;
+    .bg_cover {
+        min-height: 70vh;
         background: $color2;
+        position: relative;
+        color: $white;
+
+        .text_container {
+
+            @include text_bigline;
+
+            .box_text {
+
+                position: absolute;
+                bottom: -120px;
+            }
+        }
+
+        .grid{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            
+            .grid-col{
+                overflow: hidden;
+            }
+        }
+
     }
+
+    .owl-dots {
+
+        padding: 0.5rem 0;
+    
+        .owl-dot {
+    
+            &.active {
+    
+                span {
+                    background: $color1;
+                    outline: 2px solid $white;
+                    outline-offset: 5px;
+                }
+            }
+    
+            &:hover {
+    
+                span {
+                    background: $white;
+                }
+            }
+        }
+    }
+    
 }
 
 

@@ -40,9 +40,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    var owl = $('.owl-carousel');
+    var owl1 = $('.owl_portfolio');
 
-    owl.owlCarousel({
+    owl1.owlCarousel({
         loop: true,
         margin: 20,
         items: 4,
@@ -74,6 +74,19 @@ $(document).ready(function () {
         }
     });
 
+    var owl2 = $('.owl-carousel_testimony');
+
+    owl2.owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+
+    });
+
+
 });
 
 
@@ -97,3 +110,4 @@ $(function() {
 
 
 });
+
