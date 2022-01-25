@@ -23,11 +23,6 @@
   src: url(../assets/fonts/Parisienne/Parisienne-Regular.ttf);
 }
 
-::before, ::after {
-  content: '';
-  position: absolute;
-}
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -336,7 +331,7 @@ body .row_sided ul a:hover span {
 
 .hero .box_text .xxxl {
   font-size: 15rem;
-  font-size: min(max(5rem, 12vw), 15rem);
+  font-size: min(max(5rem, 12vw), 15rem);
   font-size: clamp(5rem, 12vw, 15rem);
   color: transparent;
   font-weight: 800;
@@ -782,7 +777,7 @@ body .row_sided ul a:hover span {
 
 .skill .box_text .xxxl {
   font-size: 15rem;
-  font-size: min(max(5rem, 12vw), 15rem);
+  font-size: min(max(5rem, 12vw), 15rem);
   font-size: clamp(5rem, 12vw, 15rem);
   color: transparent;
   font-weight: 800;
@@ -855,12 +850,12 @@ body .row_sided ul a:hover span {
   transform: translateY(-50%);
   z-index: 10;
   right: 0;
-  top: 110%;
+  top: 100%;
 }
 
 .speciality .box_text .xxxl {
   font-size: 15rem;
-  font-size: min(max(5rem, 12vw), 15rem);
+  font-size: min(max(5rem, 12vw), 15rem);
   font-size: clamp(5rem, 12vw, 15rem);
   color: transparent;
   font-weight: 800;
@@ -916,7 +911,7 @@ body .row_sided ul a:hover span {
   color: #fff;
 }
 
-.testimony .bg_cover .text_container {
+.testimony .text_container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -925,39 +920,39 @@ body .row_sided ul a:hover span {
   overflow: hidden;
 }
 
-.testimony .bg_cover .text_container .box_text {
+.testimony .text_container .box_text {
   position: absolute;
   bottom: -100px;
   left: 16px;
 }
 
-.testimony .bg_cover .text_container .box_text .xxxl {
+.testimony .text_container .box_text .xxxl {
   font-size: 15rem;
   font-weight: 800;
   color: #fff;
 }
 
-.testimony .bg_cover .text_container .box_text {
+.testimony .text_container .box_text {
   position: absolute;
   bottom: -120px;
 }
 
-.testimony .bg_cover .grid {
+.testimony .grid {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   padding: 4rem;
 }
 
-.testimony .bg_cover .grid .grid-col {
+.testimony .grid .grid-col {
   overflow: hidden;
 }
 
-.testimony .bg_cover .left {
+.testimony .left {
   padding: 1rem 2rem;
 }
 
-.testimony .bg_cover .left .head {
+.testimony .left .head {
   font-size: 14rem;
   font-family: 'Montagu Slab', serif;
   transform: rotate(180deg);
@@ -966,47 +961,49 @@ body .row_sided ul a:hover span {
   margin-top: -8rem;
 }
 
-.testimony .bg_cover .left .subhead_s {
+.testimony .left .subhead_s {
   font-size: 1.25rem;
 }
 
-.testimony .bg_cover .left .subhead {
+.testimony .left .subhead {
   font-size: 2.5rem;
   letter-spacing: .125rem;
   padding: .75rem 0;
 }
 
-.testimony .bg_cover .left .text {
+.testimony .left .text {
   font-size: 1rem;
   font-weight: 300;
   padding: .5rem 0;
 }
 
-.testimony .bg_cover .right {
+.testimony .right {
   padding: 1rem 2rem;
 }
 
-.testimony .bg_cover .right .item .subhead {
+.testimony .right .item .subhead {
   font-style: italic;
   font-weight: 400;
   text-align: justify;
   padding: 1.5rem 0;
 }
 
-.testimony .bg_cover .right .item .xxl {
+.testimony .right .item .xxl {
   font-size: 0.75rem;
   font-weight: 200;
   position: relative;
 }
 
-.testimony .bg_cover .right .item .client {
+.testimony .right .item .client {
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
   margin-left: 30px;
 }
 
-.testimony .bg_cover .right .item .client::before {
+.testimony .right .item .client::before {
+  content: " ";
+  position: absolute;
   width: 30px;
   height: 2px;
   top: 10px;
@@ -1018,31 +1015,39 @@ body .row_sided ul a:hover span {
   padding: 0.5rem 0;
 }
 
+.testimony .owl-dots .owl-dot span {
+  width: 50px;
+  height: 5px;
+  margin: 3rem 1.5rem;
+  background: #d6d6d6;
+  border-radius: 1px;
+  position: relative;
+}
+
 .testimony .owl-dots .owl-dot.active span {
   background: #ef5c6e;
   outline: none;
 }
 
 .testimony .owl-dots .owl-dot.active span::before, .testimony .owl-dots .owl-dot.active span::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 5px;
   background: #ef5c6e;
+  border-radius: 1px;
 }
 
 .testimony .owl-dots .owl-dot.active span::before {
-  width: 14px;
-  height: 5px;
   top: -4px;
   right: -5px;
   transform: rotate(45deg);
-  border-radius: 1px;
 }
 
 .testimony .owl-dots .owl-dot.active span::after {
-  width: 14px;
-  height: 5px;
   top: 4px;
   right: -5px;
   transform: rotate(315deg);
-  border-radius: 1px;
 }
 
 .testimony .owl-dots .owl-dot:hover span {
@@ -1050,17 +1055,28 @@ body .row_sided ul a:hover span {
 }
 
 .testimony .owl-dots .owl-dot:hover span::before, .testimony .owl-dots .owl-dot:hover span::after {
-  background: #fff;
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 5px;
+  background: #ef5c6e;
+  border-radius: 1px;
 }
 
-.testimony .owl-dots .owl-dot span {
-  width: 50px;
-  height: 5px;
-  margin: 3rem 1.5rem;
-  background: #d6d6d6;
-  backface-visibility: visible;
-  border-radius: 1px;
-  position: relative;
+.testimony .owl-dots .owl-dot:hover span::before {
+  top: -4px;
+  right: -5px;
+  transform: rotate(45deg);
+}
+
+.testimony .owl-dots .owl-dot:hover span::after {
+  top: 4px;
+  right: -5px;
+  transform: rotate(315deg);
+}
+
+.testimony .owl-dots .owl-dot:hover span::before, .testimony .owl-dots .owl-dot:hover span::after {
+  background: #fff;
 }
 
 .footer .credit {
@@ -1625,7 +1641,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   body .skill .box_text .xxxl {
     font-size: 15rem;
-    font-size: min(max(5rem, 12vw), 15rem);
+    font-size: min(max(5rem, 12vw), 15rem);
     font-size: clamp(5rem, 12vw, 15rem);
     color: transparent;
     font-weight: 800;
