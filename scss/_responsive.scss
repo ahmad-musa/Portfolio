@@ -54,7 +54,7 @@
         }
     }
 
-    .skill_new {
+    .skill {
 
         .grid {
             gap: 1rem;
@@ -219,7 +219,7 @@
         }
     }
 
-    .skill_new {
+    .skill {
 
         .grid {
             gap: 1rem;
@@ -490,28 +490,14 @@
                 @include text_outline;
             }
 
-            .col_about_left {}
-        }
-
-        .speciality {
-
-            .box {
-
-                @include centered;
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        .skill_new {
-
             .grid {
                 gap: 0;
                 grid-template-columns: 1fr;
                 justify-items: center;
 
                 .grid-col-1 {
-                    grid-row: 1/1;
+                    // grid-row: 1/1;
+                    padding: 1rem;
 
                     .col_about_left {
 
@@ -521,14 +507,14 @@
                         position: relative;
 
                         .box_about {
-                            width: 20vw;
-                            height: 20vw;
+                            width: 30vw;
+                            height: 30vw;
                             left: -5px;
                         }
 
                         .img_about {
-                            width: 20vw;
-                            height: 20vw;
+                            width: 30vw;
+                            height: 30vw;
                             left: 15px;
                             top: -30px;
                             position: relative;
@@ -538,7 +524,7 @@
                         .img_front {
                             position: absolute;
                             width: auto;
-                            height: 20vw;
+                            height: 30vw;
                             left: 50%;
                             transform: translateX(-50%);
                             top: -30px;
@@ -554,6 +540,17 @@
                     grid-column: 1/2;
                     padding: 0 1rem;
                 }
+            }
+
+        }
+
+        .speciality {
+
+            .box {
+
+                @include centered;
+                flex-direction: column;
+                text-align: center;
             }
         }
 
