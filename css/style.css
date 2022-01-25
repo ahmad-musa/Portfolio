@@ -23,6 +23,11 @@
   src: url(../assets/fonts/Parisienne/Parisienne-Regular.ttf);
 }
 
+::before, ::after {
+  content: '';
+  position: absolute;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -905,7 +910,7 @@ body .row_sided ul a:hover span {
 }
 
 .testimony .bg_cover {
-  min-height: 70vh;
+  min-height: 75vh;
   background: #6e50f0;
   position: relative;
   color: #fff;
@@ -941,10 +946,72 @@ body .row_sided ul a:hover span {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
+  padding: 4rem;
 }
 
 .testimony .bg_cover .grid .grid-col {
   overflow: hidden;
+}
+
+.testimony .bg_cover .left {
+  padding: 1rem 2rem;
+}
+
+.testimony .bg_cover .left .head {
+  font-size: 14rem;
+  font-family: 'Montagu Slab', serif;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: end;
+  margin-top: -8rem;
+}
+
+.testimony .bg_cover .left .subhead_s {
+  font-size: 1.25rem;
+}
+
+.testimony .bg_cover .left .subhead {
+  font-size: 2.5rem;
+  letter-spacing: .125rem;
+  padding: .75rem 0;
+}
+
+.testimony .bg_cover .left .text {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .5rem 0;
+}
+
+.testimony .bg_cover .right {
+  padding: 1rem 2rem;
+}
+
+.testimony .bg_cover .right .item .subhead {
+  font-style: italic;
+  font-weight: 400;
+  text-align: justify;
+  padding: 1.5rem 0;
+}
+
+.testimony .bg_cover .right .item .xxl {
+  font-size: 0.75rem;
+  font-weight: 200;
+  position: relative;
+}
+
+.testimony .bg_cover .right .item .client {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.testimony .bg_cover .right .item .client::before {
+  width: 30px;
+  height: 2px;
+  top: 10px;
+  left: -10px;
+  background: white;
 }
 
 .testimony .owl-dots {
@@ -953,12 +1020,47 @@ body .row_sided ul a:hover span {
 
 .testimony .owl-dots .owl-dot.active span {
   background: #ef5c6e;
-  outline: 2px solid #fff;
-  outline-offset: 5px;
+  outline: none;
+}
+
+.testimony .owl-dots .owl-dot.active span::before, .testimony .owl-dots .owl-dot.active span::after {
+  background: #ef5c6e;
+}
+
+.testimony .owl-dots .owl-dot.active span::before {
+  width: 14px;
+  height: 5px;
+  top: -4px;
+  right: -5px;
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+
+.testimony .owl-dots .owl-dot.active span::after {
+  width: 14px;
+  height: 5px;
+  top: 4px;
+  right: -5px;
+  transform: rotate(315deg);
+  border-radius: 1px;
 }
 
 .testimony .owl-dots .owl-dot:hover span {
   background: #fff;
+}
+
+.testimony .owl-dots .owl-dot:hover span::before, .testimony .owl-dots .owl-dot:hover span::after {
+  background: #fff;
+}
+
+.testimony .owl-dots .owl-dot span {
+  width: 50px;
+  height: 5px;
+  margin: 3rem 1.5rem;
+  background: #d6d6d6;
+  backface-visibility: visible;
+  border-radius: 1px;
+  position: relative;
 }
 
 .footer .credit {
