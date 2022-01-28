@@ -830,9 +830,38 @@
     }
 
     .bg_cover {
-        min-height: 50vh;
+        min-height: 40vh;
         background: $color1;
         position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .subhead{
+        color: $white;
+        line-height: 1.5;
+        padding: 2rem 4rem;
+    }
+
+    .owl-carousel{
+
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+
+        .item{
+            padding: 1rem 1.5rem;
+            margin: 1rem;
+
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                opacity: .75;
+                width: 300px;
+                height: auto;
+            }
+        }
     }
 }
 

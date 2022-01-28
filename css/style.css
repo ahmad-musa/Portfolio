@@ -1111,9 +1111,36 @@ body .row_sided ul a:hover span {
 }
 
 .brand .bg_cover {
-  min-height: 50vh;
+  min-height: 40vh;
   background: #ef5c6e;
   position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brand .subhead {
+  color: #fff;
+  line-height: 1.5;
+  padding: 2rem 4rem;
+}
+
+.brand .owl-carousel {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.brand .owl-carousel .item {
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+}
+
+.brand .owl-carousel .item img {
+  filter: grayscale(100%);
+  opacity: .75;
+  width: 300px;
+  height: auto;
 }
 
 .footer .credit {

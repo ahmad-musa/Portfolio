@@ -86,6 +86,19 @@ $(document).ready(function () {
 
     });
 
+    var owl3 = $('.owl-carousel_brand');
+
+    owl3.owlCarousel({
+        loop: true,
+        items: 4,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        center: false,
+        nav: false,
+    });
+
 
 });
 
