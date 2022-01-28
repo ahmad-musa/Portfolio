@@ -398,6 +398,7 @@
 
                 &:hover {
 
+
                     img {
                         transform: scale(.65) rotate(10deg);
                         border-radius: 30px;
@@ -815,6 +816,27 @@
 
 
 
+// Brand Section Starts
+
+.brand {
+    position: relative;
+
+    .box_text {
+
+        @include text_outline;
+
+        right: 0;
+        top: 0;
+    }
+
+    .bg_cover {
+        min-height: 50vh;
+        background: $color1;
+        position: relative;
+    }
+}
+
+// Brand Section Ends
 
 @import 'footer';
 @import 'sidenav';
