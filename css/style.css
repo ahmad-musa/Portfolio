@@ -44,7 +44,7 @@ img {
 }
 
 .container_section {
-  padding: 1.6rem 0;
+  padding: 1.5rem 0;
 }
 
 .relative_box {
@@ -625,7 +625,7 @@ body .row_sided ul a:hover span {
 }
 
 .about .col_about_right .top {
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 .about .col_about_right .top .text {
@@ -634,7 +634,7 @@ body .row_sided ul a:hover span {
 }
 
 .about .col_about_right .bottom {
-  padding: 0.4rem 1.6rem;
+  padding: 0.4rem 1.5rem;
   font-weight: 600;
 }
 
@@ -706,7 +706,7 @@ body .row_sided ul a:hover span {
 }
 
 .service .box .left {
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 .service .box .left .left_box {
@@ -739,7 +739,7 @@ body .row_sided ul a:hover span {
 }
 
 .service .box .right {
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 .service .box .right .text {
@@ -1111,24 +1111,24 @@ body .row_sided ul a:hover span {
 }
 
 .brand .bg_cover {
-  min-height: 40vh;
+  min-height: 30vh;
   background: #ef5c6e;
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding: 2rem;
 }
 
 .brand .subhead {
   color: #fff;
   line-height: 1.5;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
 .brand .owl-carousel {
   display: flex;
   align-items: center;
-  padding: 2rem;
 }
 
 .brand .owl-carousel .item {

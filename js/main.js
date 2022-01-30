@@ -97,6 +97,22 @@ $(document).ready(function () {
         autoplayHoverPause: false,
         center: false,
         nav: false,
+
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 3,
+            },
+            800: {
+                items: 4,
+            },
+            1000: {
+                items: 5,
+            }
+        }
     });
 
 

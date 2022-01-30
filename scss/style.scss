@@ -1,8 +1,8 @@
-@import 'config';
-@import 'globalclass';
-@import 'sidelinks';
-@import 'mixin';
-@import 'header';
+@import 'partials/config';
+@import 'partials/globalclass';
+@import 'partials/sidelinks';
+@import 'partials/mixin';
+@import 'partials/header';
 
 
 // Hero Section Starts
@@ -830,29 +830,29 @@
     }
 
     .bg_cover {
-        min-height: 40vh;
+        min-height: 30vh;
         background: $color1;
         position: relative;
         display: flex;
         align-items: center;
         overflow: hidden;
+        padding: $s5;
     }
 
     .subhead{
         color: $white;
         line-height: 1.5;
-        padding: 2rem 4rem;
+        padding: $s5;
     }
 
     .owl-carousel{
 
         display: flex;
         align-items: center;
-        padding: 2rem;
 
         .item{
-            padding: 1rem 1.5rem;
-            margin: 1rem;
+            padding: $s3 $s4;
+            margin: $s3;
 
             img{
                 -webkit-filter: grayscale(100%);
@@ -867,6 +867,6 @@
 
 // Brand Section Ends
 
-@import 'footer';
-@import 'sidenav';
-@import 'responsive';
+@import 'partials/footer';
+@import 'partials/sidenav';
+@import 'partials/responsive';
