@@ -243,8 +243,23 @@
         }
     }
 
-    .testimony{
-        
+    .testimony {
+
+        .grid {
+            grid-gap: .5rem;
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+    }
+
+    .brand{
+
+        .bg_cover{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
 
@@ -554,8 +569,23 @@
             }
         }
 
+        .testimony {
+
+            .grid {
+                grid-gap: .5rem;
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+        }
+
         .brand{
 
+            .bg_cover{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
     }

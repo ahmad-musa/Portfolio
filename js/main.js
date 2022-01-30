@@ -103,14 +103,14 @@ $(document).ready(function () {
             0: {
                 items: 2,
             },
-            600: {
+            770: {
                 items: 3,
             },
-            800: {
-                items: 4,
+            900: {
+                items: 3,
             },
-            1000: {
-                items: 5,
+            1200: {
+                items: 4,
             }
         }
     });

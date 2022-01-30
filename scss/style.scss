@@ -667,18 +667,21 @@
     .bg_cover {
         min-height: 75vh;
         background: $color2;
-        position: relative;
         color: $white;
+        position: relative;
     }
+    
+    .text_wraper {
 
-    .text_container {
+        .text_container {
 
-        @include text_bigline;
+            @include text_bigline;
 
-        .box_text {
+            .box_text {
 
-            position: absolute;
-            bottom: -120px;
+                position: absolute;
+                bottom: -120px;
+            }
         }
     }
 
@@ -744,15 +747,15 @@
                 font-size: $fs_m;
                 font-weight: 400;
                 color: $white;
-                margin-left: 30px;
+                margin-left: 40px;
 
                 &::before {
                     content: " ";
                     position: absolute;
-                    width: 30px;
+                    width: 25px;
                     height: 2px;
-                    top: 10px;
-                    left: -10px;
+                    top: 9px;
+                    left: 5px;
                     background: rgb(255, 255, 255);
                 }
             }
@@ -768,7 +771,7 @@
 
         .owl-dot {
 
-            
+
             span {
                 width: 50px;
                 height: 5px;
@@ -839,29 +842,30 @@
         padding: $s5;
     }
 
-    .subhead{
+    .head {
         color: $white;
         line-height: 1.5;
         padding: $s5;
     }
 
-    .owl-carousel{
+    .owl-carousel {
 
         display: flex;
         align-items: center;
 
-        .item{
+        .item {
             padding: $s3 $s4;
             margin: $s3;
 
-            img{
+            img {
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
                 opacity: .75;
-                width: 300px;
+                width: 500px;
                 height: auto;
             }
         }
+
     }
 }
 
