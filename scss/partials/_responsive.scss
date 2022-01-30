@@ -79,6 +79,18 @@
         }
     }
 
+    .testimony {
+
+        .left {
+            .head {
+                font-size: 11rem;
+            }
+        }
+
+    }
+
+
+
 
 }
 
@@ -250,11 +262,21 @@
             grid-template-columns: 1fr;
             padding: 2rem;
         }
+
+        .left {
+            .head {
+                font-size: 11rem;
+            }
+        }
+
+        .owl-dots {
+            padding: $s05 0 $s5 0;
+        }
     }
 
-    .brand{
+    .brand {
 
-        .bg_cover{
+        .bg_cover {
 
             display: flex;
             flex-direction: column;
@@ -576,15 +598,77 @@
                 grid-template-columns: 1fr;
                 padding: 2rem;
             }
+
+            .left,
+            .right {
+                padding: 0 2rem;
+            }
+
+            .left {
+                text-align: center;
+
+                .subhead_s {
+
+                    margin-top: -25px;
+                }
+
+                .head {
+                    font-size: 11rem;
+                }
+
+                .subhead {
+                    font-size: $fs_l;
+                    letter-spacing: .125rem;
+                    padding: .75rem 0;
+                }
+
+                .text {
+                    font-size: $fs_s;
+                }
+            }
+
+            .right {
+
+                .subhead {
+                    font-size: $fs_m;
+                }
+
+                span,
+                .client {
+                    font-size: $fs_s;
+                }
+
+                .client::before {
+
+                    content: " ";
+                    position: absolute;
+                    width: 20px;
+                    height: 2px;
+                    top: 6px;
+                }
+            }
+
+            .owl-dots {
+                padding: 0 0 $s5 0;
+
+            }
+
+
+
         }
 
-        .brand{
+        .brand {
 
-            .bg_cover{
+            .bg_cover {
 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .head {
+                text-align: center;
+                padding: $s3;
             }
         }
 

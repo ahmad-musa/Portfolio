@@ -57,6 +57,13 @@ img {
     padding: $s2 0;
 }
 
+.rotated{
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: end;
+    margin-top: -8rem;
+}
+
 .m {
     font-size: $fs_lm;
     padding: 0 0 $s2 0;
