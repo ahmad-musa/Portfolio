@@ -64,6 +64,19 @@ img {
     margin-top: -8rem;
 }
 
+.text {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.semi_bold{
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 600;
+}
+
 .m {
     font-size: $fs_lm;
     padding: 0 0 $s2 0;
@@ -82,11 +95,6 @@ img {
     font-family: $font1_bold;
     letter-spacing: 8px;
     text-transform: uppercase;
-}
-
-.text {
-    text-align: justify;
-    line-height: 1.5;
 }
 
 .pad_y {

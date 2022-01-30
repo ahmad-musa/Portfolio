@@ -87,6 +87,19 @@ img {
   margin-top: -8rem;
 }
 
+.text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.semi_bold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .m {
   font-size: 1.5rem;
   padding: 0 0 0.8rem 0;
@@ -105,11 +118,6 @@ img {
   font-family: "Poppins Bold", sans-serif;
   letter-spacing: 8px;
   text-transform: uppercase;
-}
-
-.text {
-  text-align: justify;
-  line-height: 1.5;
 }
 
 .pad_y {
@@ -1144,6 +1152,18 @@ body .row_sided ul a:hover span {
   opacity: .75;
   width: 500px;
   height: auto;
+}
+
+.contact .subhead2 {
+  font-size: 1.15rem;
+}
+
+.contact .pad_y {
+  padding: 1rem 0;
+}
+
+.contact .bottom {
+  padding: 2rem 0;
 }
 
 .footer .credit {
