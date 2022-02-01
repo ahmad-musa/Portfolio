@@ -1,7 +1,19 @@
 // Footer Section Starts
 
 .footer{
-    
+  background: $clr_bg;
+
+  .footer_img{
+    width: 10vw;
+  }
+
+  .img1{
+    width: 4vw;
+    padding: 10px;
+    border-radius: 50%;
+    background: $color2;
+  }
+
     .credit {
         text-align: center;
       }

@@ -1155,7 +1155,7 @@ body .row_sided ul a:hover span {
 }
 
 .contact {
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 0 0;
 }
 
 .contact .subhead2 {
@@ -1250,6 +1250,21 @@ body .row_sided ul a:hover span {
 .contact .message_box .submit:hover {
   color: #ef5c6e;
   background: #fff;
+}
+
+.footer {
+  background: #f7f8fc;
+}
+
+.footer .footer_img {
+  width: 10vw;
+}
+
+.footer .img1 {
+  width: 4vw;
+  padding: 10px;
+  border-radius: 50%;
+  background: #6e50f0;
 }
 
 .footer .credit {
