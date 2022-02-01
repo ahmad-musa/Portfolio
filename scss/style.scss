@@ -902,6 +902,30 @@
         }
     }
 
+    .bottom{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        // min-height: 300px;
+        // max-width: 500px;
+        min-height: 40vw;
+        max-width: 40vw;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        // min-height: 300px;
+        // max-width: 500px;
+        min-height: 40vw;
+        max-width: 40vw;
+    }
+
+
     .form {
         background: $clr_bg;
         padding: 2rem;
@@ -924,11 +948,11 @@
             width: 80%;
             color: $color2;
 
-            &::placeholder{
+            &::placeholder {
                 color: $clr_text;
             }
 
-            &:focus{
+            &:focus {
                 outline: 2px solid $color2;
                 color: $color2;
             }

@@ -1189,6 +1189,25 @@ body .row_sided ul a:hover span {
   grid-column: 2/3;
 }
 
+.contact .bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .mapouter {
+  position: relative;
+  text-align: right;
+  min-height: 40vw;
+  max-width: 40vw;
+}
+
+.contact .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  min-height: 40vw;
+  max-width: 40vw;
+}
+
 .contact .form {
   background: #f7f8fc;
   padding: 2rem;
@@ -1340,6 +1359,30 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   .testimony .left .head {
     font-size: 11rem;
+  }
+  .contact .head {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .contact .grid {
+    grid-gap: 1rem;
+  }
+  .contact .top {
+    text-align: left;
+    padding-bottom: 0;
+  }
+  .contact .bottom {
+    padding: 1rem;
+  }
+  .contact .mapouter,
+  .contact .gmap_canvas {
+    max-width: 60vw;
+  }
+  .contact .form {
+    padding: 1rem;
+  }
+  .contact .message_box {
+    padding: 0rem;
   }
 }
 
@@ -1553,6 +1596,37 @@ body.side-menu-visible #side-menu .nav-link:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact .head {
+    text-align: center;
+  }
+  .contact .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .contact .grid .grid-col-1 {
+    grid-column: 1/2;
+  }
+  .contact .grid .grid-col-2 {
+    grid-column: 1/2;
+  }
+  .contact .grid .grid-col-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .contact .top {
+    display: flex;
+    justify-content: center;
+  }
+  .contact .bottom {
+    padding: 1rem;
+  }
+  .contact .mapouter,
+  .contact .gmap_canvas {
+    max-width: 90vw;
+  }
+  .contact .form {
+    padding: 1rem;
   }
 }
 
@@ -1922,5 +1996,60 @@ body.side-menu-visible #side-menu .nav-link:hover {
   body .brand .head {
     text-align: center;
     padding: 1rem;
+  }
+  body .contact .head {
+    text-align: center;
+  }
+  body .contact .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  body .contact .grid .grid-col-1 {
+    grid-column: 1/2;
+  }
+  body .contact .grid .grid-col-2 {
+    grid-column: 1/2;
+  }
+  body .contact .grid .grid-col-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  body .contact .bottom {
+    padding: 1rem;
+  }
+  body .contact .mapouter,
+  body .contact .gmap_canvas {
+    max-width: 80vw;
+  }
+  body .contact .form {
+    padding: 1rem;
+  }
+  body .contact .message_box {
+    padding: .5rem;
+  }
+}
+
+@media screen and (max-width: 392.98px) {
+  body .contact .head {
+    font-size: 1rem;
+  }
+  body .contact .bottom {
+    padding: .25rem;
+  }
+  body .contact table tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .contact .form {
+    padding: .25rem;
+  }
+  body .contact .message_box {
+    padding: .25rem;
+  }
+  body .contact .message_box .input {
+    padding: .5rem;
   }
 }

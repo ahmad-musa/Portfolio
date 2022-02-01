@@ -89,6 +89,40 @@
 
     }
 
+    .contact {
+
+        .head {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .grid {
+            grid-gap: 1rem;
+        }
+
+        .top{
+            text-align: left;
+            padding-bottom: 0;
+        }
+
+        .bottom {
+            padding: 1rem;
+        }
+
+        .mapouter,
+        .gmap_canvas {
+            max-width: 60vw;
+        }
+
+        .form {
+            padding: 1rem;
+        }
+
+        .message_box {
+            padding: 0rem;
+        }
+
+    }
 
 
 
@@ -282,6 +316,50 @@
             flex-direction: column;
             align-items: center;
         }
+    }
+
+    .contact {
+
+        .head {
+            text-align: center;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            .grid-col-1 {
+                grid-column: 1/2;
+            }
+
+            .grid-col-2 {
+                grid-column: 1/2;
+            }
+
+            .grid-col-3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom {
+            padding: 1rem;
+        }
+
+        .mapouter,
+        .gmap_canvas {
+            max-width: 90vw;
+        }
+
+        .form {
+            padding: 1rem;
+        }
+
     }
 
 
@@ -660,7 +738,6 @@
         .brand {
 
             .bg_cover {
-
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -672,6 +749,91 @@
             }
         }
 
+        .contact {
+
+            .head {
+                text-align: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+
+                .grid-col-1 {
+                    grid-column: 1/2;
+                }
+
+                .grid-col-2 {
+                    grid-column: 1/2;
+                }
+
+                .grid-col-3 {
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+            }
+
+            .bottom {
+                padding: 1rem;
+            }
+
+            .mapouter,
+            .gmap_canvas {
+                max-width: 80vw;
+            }
+
+            .form {
+                padding: 1rem;
+            }
+
+            .message_box {
+                padding: .5rem;
+            }
+
+        }
     }
+
+}
+
+
+@media screen and (max-width: 392.98px){
+    
+    body{
+        
+    .contact {
+
+        .head {
+            font-size: 1rem;
+        }
+
+        .bottom {
+            padding: .25rem;
+        }
+
+        table{
+            tr{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+
+        .form {
+            padding: .25rem;
+        }
+
+        .message_box {
+            padding: .25rem;
+
+            .input {
+                padding: .5rem;
+            }
+        }
+
+    }
+    }
+
 
 }
