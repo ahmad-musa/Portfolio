@@ -1167,12 +1167,16 @@ body .social_links a:hover span {
   padding: 3.5rem 0 0 0;
 }
 
+.contact .container_section {
+  padding: 1.5rem 0 0 0;
+}
+
 .contact .subhead2 {
   font-size: 1.15rem;
 }
 
 .contact .pad_y {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 .contact .bottom {
@@ -1315,15 +1319,29 @@ body .social_links a:hover span {
   margin: 1rem 0;
   background: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #9b9b9b;
 }
 
 .footer .letter .btn_cmn {
-  padding: 1rem 0.8rem;
+  padding: 1rem 0.4rem;
 }
 
 .footer .letter .btn_cmn:focus {
+  color: #6e50f0;
+}
+
+.footer .letter button {
+  background: #fff;
+  padding: 1rem;
+}
+
+.footer .letter button i {
+  color: #ef5c6e;
+  font-size: 1.75rem;
+}
+
+.footer .letter button:hover i {
   color: #6e50f0;
 }
 

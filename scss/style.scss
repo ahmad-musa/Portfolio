@@ -871,12 +871,16 @@
 
     padding: $s6 0 0 0;
 
+    .container_section {
+        padding: 1.5rem 0 0 0;
+    }
+
     .subhead2 {
         font-size: $fs_ml;
     }
 
     .pad_y {
-        padding: 1rem 0;
+        padding: 1rem 0 0 0;
     }
 
     .bottom {

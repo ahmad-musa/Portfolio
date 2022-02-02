@@ -68,14 +68,30 @@
     margin: $s3 0;
     background: $white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: $clr_text;
 
     .btn_cmn {
-      padding: $s3 $s2;
+      padding: $s3 $s1;
 
-      &:focus{
+      &:focus {
         color: $color2;
+      }
+    }
+
+    button {
+      background: $white;
+      padding: $s3;
+
+      i {
+        color: $color1;
+        font-size: $fs_l;
+      }
+
+      &:hover{
+        i {
+          color: $color2;
+        }
       }
     }
 
