@@ -2,6 +2,7 @@
 
 .footer {
   background: $clr_bg;
+  padding: $s4 0 0 0;
 
   .footer_img {
     width: 8vw;
@@ -17,6 +18,7 @@
 
   .social_links {
     transform: rotate(0deg);
+    padding: $s4 0 0 0;
 
     li {
 
@@ -43,8 +45,52 @@
 
   }
 
+  .grid-col {
+    padding: $s2;
+  }
+
+  .img_wraper {
+    padding: $s1 0;
+  }
+
+  .subhead {
+    padding: $s3 0;
+  }
+
+  h6 {
+    a {
+      padding: $s1 0;
+    }
+  }
+
+  .letter {
+    // padding: $s3 0;
+    margin: $s3 0;
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    color: $clr_text;
+
+    .btn_cmn {
+      padding: $s3 $s2;
+
+      &:focus{
+        color: $color2;
+      }
+    }
+
+  }
+
+
 
   .credit {
+    padding: $s6 0 $s4 0;
+
+    .right {
+      a {
+        padding: 0 $s4;
+      }
+    }
 
   }
 }

@@ -31,6 +31,10 @@ img {
   width: 100%;
 }
 
+a:hover {
+  color: #6e50f0;
+}
+
 .home {
   background: #6b6b6b;
   background: url(../image/bg1.jpg);
@@ -62,7 +66,6 @@ img {
 
 .ash {
   color: #9b9b9b;
-  padding: 0.8rem 0;
 }
 
 .subhead {
@@ -1260,6 +1263,7 @@ body .social_links a:hover span {
 
 .footer {
   background: #f7f8fc;
+  padding: 1.5rem 0 0 0;
 }
 
 .footer .footer_img {
@@ -1276,6 +1280,7 @@ body .social_links a:hover span {
 
 .footer .social_links {
   transform: rotate(0deg);
+  padding: 1.5rem 0 0 0;
 }
 
 .footer .social_links li:first-child a {
@@ -1288,6 +1293,46 @@ body .social_links a:hover span {
 
 .footer .social_links li a:hover {
   outline: none;
+}
+
+.footer .grid-col {
+  padding: 0.8rem;
+}
+
+.footer .img_wraper {
+  padding: 0.4rem 0;
+}
+
+.footer .subhead {
+  padding: 1rem 0;
+}
+
+.footer h6 a {
+  padding: 0.4rem 0;
+}
+
+.footer .letter {
+  margin: 1rem 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #9b9b9b;
+}
+
+.footer .letter .btn_cmn {
+  padding: 1rem 0.8rem;
+}
+
+.footer .letter .btn_cmn:focus {
+  color: #6e50f0;
+}
+
+.footer .credit {
+  padding: 3.5rem 0 1.5rem 0;
+}
+
+.footer .credit .right a {
+  padding: 0 1.5rem;
 }
 
 /* Side Navbar Starts (Better Nav) */
