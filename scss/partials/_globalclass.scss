@@ -105,6 +105,12 @@ img {
     padding: 0 2rem;
 }
 
+.grid{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(4,auto);
+}
+
 .signature {
     font-size: $fs_l;
     font-family: $font2;

@@ -1,23 +1,52 @@
 // Footer Section Starts
 
-.footer{
+.footer {
   background: $clr_bg;
 
-  .footer_img{
+  .footer_img {
     width: 8vw;
   }
 
-  .img1{
+  .img1 {
     width: 3vw;
     padding: 10px;
     border-radius: 50%;
     background: $color2;
+    margin: 0 0.5rem 0 0;
   }
 
-  
+  .social_links {
+    transform: rotate(0deg);
 
-    .credit {
-        text-align: center;
+    li {
+
+      &:first-child {
+        a {
+          padding-left: 0;
+        }
       }
+
+      &:last-child {
+        a {
+          padding-right: 0;
+        }
+      }
+
+      a {
+
+        &:hover {
+          outline: none;
+        }
+      }
+
+    }
+
+  }
+
+
+  .credit {
+
+  }
 }
+
 // Footer Section Ends

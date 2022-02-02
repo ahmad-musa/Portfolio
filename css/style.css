@@ -128,6 +128,12 @@ img {
   padding: 0 2rem;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, auto);
+}
+
 .signature {
   font-size: 1.75rem;
   font-family: "Parisienne", cursive;
@@ -245,33 +251,33 @@ body .row_sided {
   z-index: 100;
 }
 
-body .row_sided ul {
+body .social_links {
   display: flex;
   transform: rotate(270deg);
 }
 
-body .row_sided ul a {
+body .social_links a {
   padding: 0.8rem 1rem;
 }
 
-body .row_sided ul a i,
-body .row_sided ul a span {
+body .social_links a i,
+body .social_links a span {
   color: #6e50f0;
   padding: 0 0.4rem 0 0;
 }
 
-body .row_sided ul a span {
+body .social_links a span {
   color: #000;
   font-weight: 600;
 }
 
-body .row_sided ul a:hover {
+body .social_links a:hover {
   outline: 2px solid #6e50f0;
   border-radius: 25px;
 }
 
-body .row_sided ul a:hover i,
-body .row_sided ul a:hover span {
+body .social_links a:hover i,
+body .social_links a:hover span {
   color: #ef5c6e;
 }
 
@@ -1265,10 +1271,23 @@ body .row_sided ul a:hover span {
   padding: 10px;
   border-radius: 50%;
   background: #6e50f0;
+  margin: 0 0.5rem 0 0;
 }
 
-.footer .credit {
-  text-align: center;
+.footer .social_links {
+  transform: rotate(0deg);
+}
+
+.footer .social_links li:first-child a {
+  padding-left: 0;
+}
+
+.footer .social_links li:last-child a {
+  padding-right: 0;
+}
+
+.footer .social_links li a:hover {
+  outline: none;
 }
 
 /* Side Navbar Starts (Better Nav) */
