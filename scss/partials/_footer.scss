@@ -5,7 +5,7 @@
   padding: $s4 0 0 0;
 
   .footer_img {
-    width: 8vw;
+    width: 32%;
   }
 
   .img1 {
@@ -45,8 +45,23 @@
 
   }
 
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 2rem;
+  }
+
   .grid-col {
     padding: $s2;
+  }
+
+  .grid_2_col{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_col{
+    padding: 0 $s2;
   }
 
   .img_wraper {
