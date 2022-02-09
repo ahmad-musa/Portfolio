@@ -98,11 +98,18 @@
 
         .grid {
             grid-gap: 1rem;
+            grid-template-columns: 1fr;
+
+            .grid-col-3 {
+                grid-column: 1/-1;
+            }
         }
 
         .top {
             text-align: left;
             padding-bottom: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .bottom {
@@ -116,11 +123,13 @@
 
         .form {
             padding: 1rem;
+            margin: 2rem;
         }
 
         .message_box {
             padding: 0rem;
         }
+
 
     }
 

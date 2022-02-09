@@ -1198,7 +1198,6 @@ body .social_links a:hover span {
 }
 
 .contact .grid .grid-col-3 {
-  grid-row: 1/3;
   grid-column: 2/3;
 }
 
@@ -1481,10 +1480,16 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   .contact .grid {
     grid-gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .contact .grid .grid-col-3 {
+    grid-column: 1/-1;
   }
   .contact .top {
     text-align: left;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
   }
   .contact .bottom {
     padding: 1rem;
@@ -1495,6 +1500,7 @@ body.side-menu-visible #side-menu .nav-link:hover {
   }
   .contact .form {
     padding: 1rem;
+    margin: 2rem;
   }
   .contact .message_box {
     padding: 0rem;
