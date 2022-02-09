@@ -46,7 +46,7 @@
   }
 
   .grid{
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     grid-gap: 2rem;
   }
 
@@ -87,7 +87,8 @@
     color: $clr_text;
 
     .btn_cmn {
-      padding: $s3 $s1;
+      padding: $s3;
+      width: 75%;
 
       &:focus {
         color: $color2;
@@ -116,10 +117,12 @@
 
   .credit {
     padding: $s6 0 $s4 0;
+    display: flex;
+    justify-content: space-between;
 
     .right {
       a {
-        padding: 0 $s4;
+        padding: 0 $s3;
       }
     }
 
